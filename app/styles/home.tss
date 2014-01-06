@@ -1,0 +1,51 @@
+"#banner":{
+	top:0,
+	height:Ti.UI.SIZE
+},
+"#search":{
+	backgroundColor:Ti.API.MAIN_COLOR,
+	height:'60dp',
+	width:Ti.UI.FILL,
+	top:0
+},
+"#searchIcon":{
+	border:Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	borderRadius:'15',
+	width:'50dp',
+	height:'40dp',
+	backgroundColor:'#fff',
+	left:'10dp'
+},
+"#searchBar":{
+	backgroundColor:'#fff',
+	backgroundFocusedColor:'#fff',
+	width:Ti.UI.FILL,
+	height:'40dp',
+	top:'10dp',
+	bottom:'10dp',
+	right:'70dp',
+	left:'44dp',
+	font:{
+		fontSize:"15dp"
+	},
+	color:'#d3d3d3'
+},
+"#searchButton":{
+	height:'40dp',
+	top:'10dp',
+	bottom:'10dp',
+	right:'5dp',
+	width:'60dp',
+	backgroundColor:Ti.API.MAIN_COLOR,
+	color:'#fff',
+	font:{
+		fontWeigth:'bold',
+		fontSize:"17dp",
+	}
+},
+"#app":{
+	layout:"vertical",
+	width:Ti.UI.FILL,
+	height:Ti.UI.FILL,
+	bottom:'60dp'
+}

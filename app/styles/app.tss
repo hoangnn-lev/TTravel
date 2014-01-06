@@ -1,0 +1,17 @@
+"Label":{
+	font:{
+		fontSize:'15dp'
+	}
+},
+"Window":{
+	backgroundColor:'#fff',
+	height:Ti.UI.FILL,
+	width:Ti.UI.FILL
+},
+"TextField":{
+	backgroundColor:'#fff',
+	backgroundFocusedColor:'#ecf8fe',
+	border:Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	borderRadius:'15',
+	borderColor:'#fff',
+}

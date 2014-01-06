@@ -1,0 +1,18 @@
+<Alloy>
+	<Window>
+		<View id="loginBar">
+			<Label text="Đăng nhập" id="loginBarText"/>
+		</View>
+		<ImageView id="logo" top="20dp" image="/logo.png" width="100dp" height="74dp"/>
+		<View id="loginBox">
+			<TextField class="loginField" hintText="Email"></TextField>
+			<TextField class="loginField" hintText="Mật khẩu" passwordMask="true"/>
+			<Button class="loginButton" title="Đăng nhập" onClick="login"/>
+			<Label text="Quên mật khẩu ?" class="forgetPassText" onClick="forgetPassword"/>
+			<Label class="otherLogin" text="OR"/>
+			<Label text="Đăng nhập bằng Facebook" class="loginByFacebook" onClick="loginByFacebook"/>
+			<Label text="Đăng nhập bằng Twitter" class="loginByTwitter" onClick="loginByTwitter"/>
+		</View>
+
+	</Window>
+</Alloy>

@@ -1,0 +1,21 @@
+<Alloy>
+	<Window>
+		<View id="app">
+			<View id="banner">
+				<ImageView image="/banner/nha-trang.jpg" width="Ti.UI.FILL" top="0"/>
+			</View>
+			<View id="search">
+				<View>
+					<View id="searchIcon">
+						<ImageView left="8dp" zIndex="1" image="/icon/search-icon.png" height="25dp" width="25dp" top="7dp"/>
+					</View>
+					<TextField id="searchBar" hintText="Nơi bạn muốn đến..."/>
+					<Button id="searchButton" title="TÌM"/>
+				</View>
+			</View>
+			<TableView id="list_tour"/>
+		</View>
+		<Require type="view" src="bar_menu">
+		</Require>
+	</Window>
+</Alloy>

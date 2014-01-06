@@ -1,0 +1,6 @@
+"#barMenu":{
+	bottom:'0',
+	backgroundColor:Ti.API.MAIN_COLOR,
+	height:'50dp',
+	width:Ti.UI.FILL
+}
