@@ -40,12 +40,14 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0007,
-    key: "barMenu",
+    priority: 100000.0044,
+    key: "hanoi",
     style: {
-        bottom: "0",
-        backgroundColor: Ti.API.MAIN_COLOR,
-        height: "50dp",
-        width: Ti.UI.FILL
+        color: "red",
+        font: {
+            fontSize: "14dp"
+        },
+        top: "70dp",
+        left: "160dp"
     }
 } ];

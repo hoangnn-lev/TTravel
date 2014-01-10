@@ -14,4 +14,11 @@
 	border:Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
 	borderRadius:'15',
 	borderColor:'#fff',
+},
+".line":{
+	width:Ti.UI.FILL,
+	height:'1sp',
+	backgroundColor:'#dfdfdf',
+	top:'2dp',
+	bottom:'2dp'
 }

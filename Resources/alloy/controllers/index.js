@@ -3,11 +3,9 @@ function Controller() {
         var home = Alloy.createController("home").getView();
         home.open();
     }
-    function forgetPassword() {
-        alert("forget passs");
-    }
     function loginByFacebook() {
-        alert("login By Facebook");
+        var map = Alloy.createController("map").getView();
+        map.open();
     }
     function loginByTwitter() {
         alert("login By Twitter");
@@ -24,155 +22,111 @@ function Controller() {
         backgroundColor: "#fff",
         height: Ti.UI.FILL,
         width: Ti.UI.FILL,
-        layout: "vertical",
+        backgroundImage: "/login.jpg",
         id: "index"
     });
     $.__views.index && $.addTopLevelView($.__views.index);
-    $.__views.loginBar = Ti.UI.createView({
-        layout: "vertical",
-        width: Ti.UI.FILL,
-        height: "40dp",
-        backgroundColor: Ti.API.MAIN_COLOR,
-        top: 0,
-        id: "loginBar"
-    });
-    $.__views.index.add($.__views.loginBar);
-    $.__views.loginBarText = Ti.UI.createLabel({
-        font: {
-            fontSize: "20dp"
-        },
-        color: "#fff",
-        textAlign: "center",
-        top: "8dp",
-        text: "Đăng nhập",
-        id: "loginBarText"
-    });
-    $.__views.loginBar.add($.__views.loginBarText);
-    $.__views.logo = Ti.UI.createImageView({
-        id: "logo",
-        top: "20dp",
-        image: "/logo.png",
-        width: "100dp",
-        height: "74dp"
-    });
-    $.__views.index.add($.__views.logo);
     $.__views.loginBox = Ti.UI.createView({
-        top: "20dp",
+        bottom: "30dp",
         height: Ti.UI.SIZE,
         width: Ti.UI.FILL,
-        layout: "vertical",
         id: "loginBox"
     });
     $.__views.index.add($.__views.loginBox);
-    $.__views.__alloyId5 = Ti.UI.createTextField({
-        backgroundColor: "#ecf8fe",
-        backgroundFocusedColor: "#c2ebff",
-        border: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
-        borderRadius: "0",
-        borderColor: "#fff",
-        width: Ti.UI.FILL,
-        height: "40dp",
-        top: "10dp",
-        font: {
-            fontSize: "15dp"
-        },
-        left: "20dp",
-        right: "20dp",
-        hintText: "Email",
-        id: "__alloyId5"
-    });
-    $.__views.loginBox.add($.__views.__alloyId5);
-    $.__views.__alloyId6 = Ti.UI.createTextField({
-        backgroundColor: "#ecf8fe",
-        backgroundFocusedColor: "#c2ebff",
-        border: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
-        borderRadius: "0",
-        borderColor: "#fff",
-        width: Ti.UI.FILL,
-        height: "40dp",
-        top: "10dp",
-        font: {
-            fontSize: "15dp"
-        },
-        left: "20dp",
-        right: "20dp",
-        hintText: "Mật khẩu",
-        passwordMask: "true",
-        id: "__alloyId6"
-    });
-    $.__views.loginBox.add($.__views.__alloyId6);
-    $.__views.__alloyId7 = Ti.UI.createButton({
-        top: "10dp",
-        width: Ti.UI.FILL,
-        backgroundColor: "#bfbfbf",
-        backgroundSelectedColor: "#c2ebff",
-        height: "45dp",
+    $.__views.__alloyId36 = Ti.UI.createView({
+        bottom: "120dp",
         color: "#fff",
+        textAlign: "left",
+        height: "40dp",
+        backgroundColor: "#345291",
+        width: Ti.UI.FILL,
+        left: "20dp",
+        right: "20dp",
         border: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
         borderRadius: "15",
-        borderColor: "#bfbfbf",
+        borderColor: "#345291",
+        id: "__alloyId36"
+    });
+    $.__views.loginBox.add($.__views.__alloyId36);
+    $.__views.__alloyId37 = Ti.UI.createImageView({
+        zIndex: "2",
+        image: "/icon/facebook.png",
+        height: "30dp",
+        left: "10dp",
+        width: "30dp",
+        id: "__alloyId37"
+    });
+    $.__views.__alloyId36.add($.__views.__alloyId37);
+    $.__views.__alloyId38 = Ti.UI.createLabel({
+        font: {
+            fontSize: "15dp"
+        },
+        color: "#fff",
+        text: "Đăng nhập bằng Facebook",
+        left: "45dp",
+        id: "__alloyId38"
+    });
+    $.__views.__alloyId36.add($.__views.__alloyId38);
+    loginByFacebook ? $.__views.__alloyId38.addEventListener("click", loginByFacebook) : __defers["$.__views.__alloyId38!click!loginByFacebook"] = true;
+    $.__views.__alloyId39 = Ti.UI.createView({
+        bottom: "70dp",
+        color: "#fff",
+        textAlign: "left",
+        height: "40dp",
+        backgroundColor: "#00aced",
+        width: Ti.UI.FILL,
         left: "20dp",
         right: "20dp",
-        title: "Đăng nhập",
-        id: "__alloyId7"
+        border: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+        borderRadius: "15",
+        borderColor: "#00aced",
+        id: "__alloyId39"
     });
-    $.__views.loginBox.add($.__views.__alloyId7);
-    login ? $.__views.__alloyId7.addEventListener("click", login) : __defers["$.__views.__alloyId7!click!login"] = true;
-    $.__views.__alloyId8 = Ti.UI.createLabel({
+    $.__views.loginBox.add($.__views.__alloyId39);
+    $.__views.__alloyId40 = Ti.UI.createImageView({
+        zIndex: "2",
+        image: "/icon/twitter.png",
+        height: "30dp",
+        left: "10dp",
+        width: "30dp",
+        id: "__alloyId40"
+    });
+    $.__views.__alloyId39.add($.__views.__alloyId40);
+    $.__views.__alloyId41 = Ti.UI.createLabel({
         font: {
             fontSize: "15dp"
         },
-        top: "10dp",
-        color: "red",
-        textAlign: "center",
-        width: Ti.UI.FILL,
-        text: "Quên mật khẩu ?",
-        id: "__alloyId8"
-    });
-    $.__views.loginBox.add($.__views.__alloyId8);
-    forgetPassword ? $.__views.__alloyId8.addEventListener("click", forgetPassword) : __defers["$.__views.__alloyId8!click!forgetPassword"] = true;
-    $.__views.__alloyId9 = Ti.UI.createLabel({
-        font: {
-            fontSize: "15dp"
-        },
-        top: "10dp",
-        color: "#ccc",
-        textAlign: "center",
-        text: "OR",
-        id: "__alloyId9"
-    });
-    $.__views.loginBox.add($.__views.__alloyId9);
-    $.__views.__alloyId10 = Ti.UI.createLabel({
-        font: {
-            fontSize: "15dp"
-        },
-        top: "10dp",
-        color: "#345291",
-        textAlign: "center",
-        text: "Đăng nhập bằng Facebook",
-        id: "__alloyId10"
-    });
-    $.__views.loginBox.add($.__views.__alloyId10);
-    loginByFacebook ? $.__views.__alloyId10.addEventListener("click", loginByFacebook) : __defers["$.__views.__alloyId10!click!loginByFacebook"] = true;
-    $.__views.__alloyId11 = Ti.UI.createLabel({
-        font: {
-            fontSize: "15dp"
-        },
-        top: "10dp",
-        color: "#00aced",
-        textAlign: "center",
+        color: "#fff",
         text: "Đăng nhập bằng Twitter",
-        id: "__alloyId11"
+        left: "45dp",
+        id: "__alloyId41"
     });
-    $.__views.loginBox.add($.__views.__alloyId11);
-    loginByTwitter ? $.__views.__alloyId11.addEventListener("click", loginByTwitter) : __defers["$.__views.__alloyId11!click!loginByTwitter"] = true;
+    $.__views.__alloyId39.add($.__views.__alloyId41);
+    loginByTwitter ? $.__views.__alloyId41.addEventListener("click", loginByTwitter) : __defers["$.__views.__alloyId41!click!loginByTwitter"] = true;
+    $.__views.__alloyId42 = Ti.UI.createView({
+        bottom: "20dp",
+        color: "#616161",
+        height: "40dp",
+        width: Ti.UI.FILL,
+        id: "__alloyId42"
+    });
+    $.__views.loginBox.add($.__views.__alloyId42);
+    $.__views.__alloyId43 = Ti.UI.createLabel({
+        font: {
+            fontSize: "15dp"
+        },
+        color: "#00597b",
+        text: "Bạn đã có tài khoản? Đăng nhập.",
+        id: "__alloyId43"
+    });
+    $.__views.__alloyId42.add($.__views.__alloyId43);
+    login ? $.__views.__alloyId43.addEventListener("click", login) : __defers["$.__views.__alloyId43!click!login"] = true;
     exports.destroy = function() {};
     _.extend($, $.__views);
     $.index.open();
-    __defers["$.__views.__alloyId7!click!login"] && $.__views.__alloyId7.addEventListener("click", login);
-    __defers["$.__views.__alloyId8!click!forgetPassword"] && $.__views.__alloyId8.addEventListener("click", forgetPassword);
-    __defers["$.__views.__alloyId10!click!loginByFacebook"] && $.__views.__alloyId10.addEventListener("click", loginByFacebook);
-    __defers["$.__views.__alloyId11!click!loginByTwitter"] && $.__views.__alloyId11.addEventListener("click", loginByTwitter);
+    __defers["$.__views.__alloyId38!click!loginByFacebook"] && $.__views.__alloyId38.addEventListener("click", loginByFacebook);
+    __defers["$.__views.__alloyId41!click!loginByTwitter"] && $.__views.__alloyId41.addEventListener("click", loginByTwitter);
+    __defers["$.__views.__alloyId43!click!login"] && $.__views.__alloyId43.addEventListener("click", login);
     _.extend($, exports);
 }
 

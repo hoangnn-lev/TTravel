@@ -1,5 +1,5 @@
 var list = [];
-
+var view_list_tour;
 list.push(create_list('/city/ha-noi.jpg', 'Hà Nội', 8));
 list.push(create_list('/city/nha-trang.jpg', 'Nha Trang', 80));
 list.push(create_list('/city/hcm.jpg', 'TP.HCM', 122));
@@ -12,10 +12,12 @@ list.push(create_list('/city/hcm.jpg', 'TP.HCM', 122));
 list.push(create_list('/city/hue.jpg', 'Khu vực Bắc trung bộ', 18));
 list.push(create_list('/city/mien-tay.jpg', 'Miền Tây', 18));
 
-$.list_tour.setData(list);
+$.list_location.setData(list);
 
-$.list_tour.addEventListener('click', function(e) {
-	alert(e.index);
+$.list_location.addEventListener('click', function(e) {
+	
+	if(!view_list_tour) view_list_tour = Alloy.createController('list_tour').getView(); 
+	view_list_tour.open();
 });
 
 $.searchButton.addEventListener('click', function(e) {

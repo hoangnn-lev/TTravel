@@ -10,20 +10,14 @@ function login(){
 	home.open();
 }
 
-/*
- * function loginByTwitter
- * action 
- * */
-function forgetPassword(){
-	alert('forget passs');
-}
 
 /*
  * function loginByTwitter
  * action 
  * */
 function loginByFacebook(){
-	alert('login By Facebook');
+	var map = Alloy.createController('map').getView();
+	map.open();
 }
 
 /*

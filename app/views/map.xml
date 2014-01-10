@@ -1,0 +1,10 @@
+<Alloy>
+	<Window>
+		<View backgroundImage="/map.jpg" bottom="50dp">
+			
+			<Label text="Hà Nội (8)" id="hanoi"/>
+			
+		</View>
+		<Require type="view" src="bar_menu"/>
+	</Window>
+</Alloy>

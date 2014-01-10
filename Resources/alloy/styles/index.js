@@ -29,122 +29,73 @@ module.exports = [ {
     }
 }, {
     isApi: true,
-    priority: 1000.0015,
-    key: "Window",
+    priority: 1000.0038,
+    key: "Label",
     style: {
-        layout: "vertical"
+        color: "#fff"
     }
 }, {
     isClass: true,
-    priority: 10000.0019,
-    key: "loginField",
+    priority: 10000.0004,
+    key: "line",
     style: {
-        backgroundColor: "#ecf8fe",
-        backgroundFocusedColor: "#c2ebff",
-        borderRadius: "0",
         width: Ti.UI.FILL,
-        height: "40dp",
-        top: "10dp",
-        font: {
-            fontSize: "15dp"
-        },
-        left: "20dp",
-        right: "20dp"
+        height: "1sp",
+        backgroundColor: "#dfdfdf",
+        top: "2dp",
+        bottom: "2dp"
     }
 }, {
     isClass: true,
-    priority: 10000.002,
-    key: "loginButton",
+    priority: 10000.0035,
+    key: "loginByTwitter",
     style: {
-        top: "10dp",
-        width: Ti.UI.FILL,
-        backgroundColor: "#bfbfbf",
-        backgroundSelectedColor: "#c2ebff",
-        height: "45dp",
+        bottom: "70dp",
         color: "#fff",
+        textAlign: "left",
+        height: "40dp",
+        backgroundColor: "#00aced",
+        width: Ti.UI.FILL,
+        left: "20dp",
+        right: "20dp",
         border: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
         borderRadius: "15",
-        borderColor: "#bfbfbf",
-        left: "20dp",
-        right: "20dp"
+        borderColor: "#00aced"
     }
 }, {
     isClass: true,
-    priority: 10000.0021,
-    key: "forgetPassText",
+    priority: 10000.0036,
+    key: "loginByFacebook",
     style: {
-        top: "10dp",
-        color: "red",
-        textAlign: "center",
+        bottom: "120dp",
+        color: "#fff",
+        textAlign: "left",
+        height: "40dp",
+        backgroundColor: "#345291",
+        width: Ti.UI.FILL,
+        left: "20dp",
+        right: "20dp",
+        border: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+        borderRadius: "15",
+        borderColor: "#345291"
+    }
+}, {
+    isClass: true,
+    priority: 10000.0037,
+    key: "loginUser",
+    style: {
+        bottom: "20dp",
+        color: "#616161",
+        height: "40dp",
         width: Ti.UI.FILL
     }
 }, {
-    isClass: true,
-    priority: 10000.0023,
-    key: "loginByTwitter",
-    style: {
-        top: "10dp",
-        color: "#00aced",
-        textAlign: "center"
-    }
-}, {
-    isClass: true,
-    priority: 10000.0024,
-    key: "loginByFacebook",
-    style: {
-        top: "10dp",
-        color: "#345291",
-        textAlign: "center"
-    }
-}, {
-    isClass: true,
-    priority: 10000.0025,
-    key: "otherLogin",
-    style: {
-        top: "10dp",
-        color: "#ccc",
-        textAlign: "center"
-    }
-}, {
     isId: true,
-    priority: 100000.0016,
-    key: "loginBar",
-    style: {
-        layout: "vertical",
-        width: Ti.UI.FILL,
-        height: "40dp",
-        backgroundColor: Ti.API.MAIN_COLOR,
-        top: 0
-    }
-}, {
-    isId: true,
-    priority: 100000.0017,
-    key: "loginBarText",
-    style: {
-        color: "#fff",
-        textAlign: "center",
-        top: "8dp",
-        font: {
-            fontSize: "20dp"
-        }
-    }
-}, {
-    isId: true,
-    priority: 100000.0018,
+    priority: 100000.0034,
     key: "loginBox",
     style: {
-        top: "20dp",
+        bottom: "30dp",
         height: Ti.UI.SIZE,
-        width: Ti.UI.FILL,
-        layout: "vertical"
-    }
-}, {
-    isId: true,
-    priority: 100000.0022,
-    key: "loginSocical",
-    style: {
-        top: "20dp",
-        left: "20dp",
-        right: "20dp"
+        width: Ti.UI.FILL
     }
 } ];

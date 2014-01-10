@@ -1,0 +1,18 @@
+<Alloy>
+	<Window>
+		<View id="app">
+			<View id="topBar">
+				<ImageView height="30dp" width="12dp"  image="/icon/Previous@2x.png" left="10dp"/>
+				<Label text="Nha Trang" id="topBarText"/>
+				<ImageView height="30dp" width="30dp"  image="/icon/New@2x.png" right="10dp"/>
+			</View>
+			<View height="Ti.UI.SIZE">
+				<ImageView top="0" image="/ads.jpg" width="Ti.UI.FILL"/>
+			</View>
+			<View>
+				<TableView id="list_tours"/>
+			</View>
+		</View>
+		<Require type="view" src="bar_menu"/>
+	</Window>
+</Alloy>

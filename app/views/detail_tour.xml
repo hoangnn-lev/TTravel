@@ -1,0 +1,68 @@
+<Alloy>
+	<Window>
+
+		<View id="app">
+			<View id="topBar">
+				<ImageView height="30dp" width="12dp"  image="/icon/Previous@2x.png" left="10dp"/>
+				<ImageView height="20dp" width="20dp"  image="/icon/p.png" left="35dp"/>
+				<Label text="Nha Trang VinperLand" left="60dp" id="topBarText"/>
+			</View>
+			<View id="detail">
+				<View id="tourDescription">
+					<View id="description">
+						<ImageView image="/icon/rating.png" top="0" left="0" width="109dp" height="21dp"></ImageView>
+						<ImageView image="/icon/booking.png" onClick="booking" top="0" right="0" width="132dp" height="30dp"></ImageView>
+						<View top="23dp" class="itemDescription">
+							<Label left="0" top="0" text="1.500.00 VNĐ" class="price"/>
+						</View>
+						<View top="50dp" class="itemDescription">
+							<ImageView image="/icon/flag.png" left="0" height="15dp" width="15dp"/>
+							<Label left="25dp"  text="Điểm xuất phát: TP. Hồ Chí Minh" class="infoTitle"/>
+						</View>
+						<View top="73dp" class="itemDescription">
+							<ImageView image="/icon/clock.png" left="0" height="15dp" width="15dp"/>
+							<Label left="25dp" text="Thời gian: 3 ngày 2 đêm" class="infoTitle"/>
+						</View>
+						<View top="96dp" class="itemDescription">
+							<ImageView image="/icon/bus.png" left="0" height="15dp" width="15dp"/>
+							<Label left="25dp" text="Ngày khởi hành: Theo yêu cầu" class="infoTitle"/>
+						</View>
+					</View>
+				</View>
+				<View layout="vertical" id="tabLink">
+
+					<View id="link">
+						<ImageView image="/icon/remove.png" class="imgLinkItem" />
+						<Label text="Hình ảnh" class="linkItem"  />
+					</View>
+					<Label class="line"/>
+					<View id="imgColection">
+						<ImageView width="22dp" zIndex="2" left="5dp" onClick="prev" height="40dp" image="/icon/prev.png"/>
+						<View id="imgContent" onClick="imgClick" zIndex="1" >
+							<ImageView image="/nha-trang-wall.jpg" height="150dp" width="330dp"/>
+						</View>
+						<ImageView width="22dp" zIndex="2"  right="5dp" height="40dp" onClick="next"  image="/icon/next.png"/>
+					</View>
+					<View id="link">
+						<ImageView image="/icon/add.png" class="imgLinkItem" />
+						<Label text="Chi tiết tour" class="linkItem" />
+					</View>
+					<Label class="line"/>
+					<View id="link">
+						<ImageView image="/icon/add.png" class="imgLinkItem" />
+						<Label text="Chương trình tour" class="linkItem" />
+					</View>
+					<Label class="line"/>
+					<View id="link">
+						<ImageView image="/icon/add.png" class="imgLinkItem" />
+						<Label text="Điều kiện - Quy định" class="linkItem"  />
+					</View>
+					<Label class="line"/>
+
+				</View>
+
+			</View>
+		</View>
+		<Require type="view" src="bar_menu"/>
+	</Window>
+</Alloy>

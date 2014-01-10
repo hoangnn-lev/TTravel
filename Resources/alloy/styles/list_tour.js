@@ -40,12 +40,34 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0007,
-    key: "barMenu",
+    priority: 100000.004,
+    key: "topBar",
     style: {
-        bottom: "0",
-        backgroundColor: Ti.API.MAIN_COLOR,
+        width: Ti.UI.FILL,
         height: "50dp",
-        width: Ti.UI.FILL
+        backgroundColor: Ti.API.MAIN_COLOR,
+        top: 0
+    }
+}, {
+    isId: true,
+    priority: 100000.0041,
+    key: "topBarText",
+    style: {
+        color: "#fff",
+        textAlign: "center",
+        top: "10dp",
+        font: {
+            fontSize: "20dp"
+        }
+    }
+}, {
+    isId: true,
+    priority: 100000.0042,
+    key: "app",
+    style: {
+        layout: "vertical",
+        width: Ti.UI.FILL,
+        height: Ti.UI.FILL,
+        bottom: "60dp"
     }
 } ];

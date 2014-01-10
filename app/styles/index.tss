@@ -1,78 +1,41 @@
-"Window":{
-	layout:'vertical'
-},
-"#loginBar":{
-	layout:"vertical",
-	width:Ti.UI.FILL,
-	height:Ti.UI.FILL,,
-	backgroundColor:Ti.API.MAIN_COLOR,
-	height:'40dp',
-	top:0
-},
-"#loginBarText":{
-	color:'#fff',
-	textAlign:'center',
-	top:'8dp',
-	font:{
-		fontSize:'20dp',
-	}
-},
 "#loginBox":{
-	top:'20dp',
+	bottom:'30dp',
 	height:Ti.UI.SIZE,
-	width:Ti.UI.FILL,
-	layout:'vertical',
+	width:Ti.UI.FILL
 	
 },
-".loginField":{
-	backgroundColor:'#ecf8fe',
-	backgroundFocusedColor:'#c2ebff',
-	borderRadius:'0',
-	width:Ti.UI.FILL,
-	height:'40dp',
-	top:'10dp',
-	font:{
-		fontSize:'15dp'
-	},
-	left:'20dp',
-	right:'20dp'
-},
-".loginButton":{
-	top:'10dp',
-	width:Ti.UI.FILL,
-	backgroundColor:'#bfbfbf',
-	backgroundSelectedColor:'#c2ebff',
-	height:'45dp',
+".loginByTwitter":{
+	bottom:'70dp',
 	color:'#fff',
+	textAlign:'left',
+	height:'40dp',
+	backgroundColor:'#00aced',
+	width:Ti.UI.FILL,
+	left:'20dp',
+	right:'20dp',
 	border:Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
 	borderRadius:'15',
-	borderColor:'#bfbfbf',
-	left:'20dp',
-	right:'20dp'
-},
-".forgetPassText":{
-	top:'10dp',
-	color:'red',
-	textAlign:'center',
-	width:Ti.UI.FILL,
-},
-"#loginSocical":{
-	top:'20dp',
-	left:'20dp',
-	right:'20dp'
-},
-".loginByTwitter":{
-	top:'10dp',
-	color:'#00aced',
-	textAlign:'center',
+	borderColor:'#00aced',
 },
 ".loginByFacebook":{
-	top:'10dp',
-	color:'#345291',
-	textAlign:'center',
+	bottom:'120dp',
+	color:'#fff',
+	textAlign:'left',
+	height:'40dp',
+	backgroundColor:'#345291',
+	width:Ti.UI.FILL,
+	left:'20dp',
+	right:'20dp',
+	border:Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	borderRadius:'15',
+	borderColor:'#345291',
 },
-".otherLogin":{
-	top:'10dp',
-	color:'#ccc',
-	textAlign:'center',
+'.loginUser':{
+	bottom:'20dp',
+	color:'#616161',
+	height:'40dp',
+	width:Ti.UI.FILL,
+},
+"Label":{
+	color:'#fff'
 }

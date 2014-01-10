@@ -1,0 +1,96 @@
+"#app":{
+	layout:"vertical",
+	width:Ti.UI.FILL,
+	height:Ti.UI.FILL,
+	bottom:'60dp'
+},
+"#topBar":{
+	width:Ti.UI.FILL,
+	height:Ti.UI.FILL,,
+	backgroundColor:Ti.API.MAIN_COLOR,
+	height:'50dp',
+	top:0
+},
+"#topBarText":{
+	color:'#fff',
+	font:{
+		fontSize:'17dp',
+	}
+},
+"#detail":{
+	left:'10dp',
+	right:'10dp',
+	bottom:'10dp',
+	top:'10dp',
+	layout:'vertical',
+},
+"#tourDescription":{
+	top:0,
+	width:Ti.UI.FILL,
+	height:Ti.UI.SIZE
+},
+"#description":{
+	left:'0',
+	height:Ti.UI.SIZE,
+	top:'5dp'
+},
+".tourTitle":{
+	color:'#f28b07',
+	font:{
+		fontSize:'16dp'
+	},
+	height:'24dp'
+},
+".price":{
+	color:'#069de4',
+	font:{
+		fontSize:'18dp'
+	},
+	left:0
+},
+".infoTitle":{
+	color:'#737373',
+	left:0
+},
+".title":{
+	width:Ti.UI.FILL,
+	height:Ti.UI.SIZE
+},
+".itemDescription":{
+	width:Ti.UI.FILL,
+	height:Ti.UI.SIZE
+},
+"#imgColection":{
+	width:Ti.UI.FILL,
+	height:'160dp',
+	backgroundColor:'#efefef',
+	border:Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	borderRadius:'15',
+	borderColor:'#efefef',
+	top:'10dp',
+	bottom:'10dp'
+},
+"#imgContent":{
+	top:'5dp',
+	bottom:'5dp',
+	left:'5dp',
+	right:'5dp',
+	width:Ti.UI.FILL,
+	height:'150dp',
+},
+"#link":{
+	width:Ti.UI.FILL,
+	height:'25dp'
+},
+".linkItem":{
+	left:'20dp',
+	color:'#8d8d8d'
+},
+".imgLinkItem":{
+	width:'15dp',
+	height:'15dp',
+	left:0
+},
+"#tabLink":{
+	top:'10dp'
+}

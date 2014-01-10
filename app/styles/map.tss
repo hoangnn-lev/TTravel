@@ -1,0 +1,8 @@
+"#hanoi":{
+	color:'red',
+	font:{
+		fontSize:'14dp'
+	},
+	top:'70dp',
+	left:'160dp'
+}

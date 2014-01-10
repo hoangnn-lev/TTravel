@@ -13,9 +13,8 @@
 					<Button id="searchButton" title="TÌM"/>
 				</View>
 			</View>
-			<TableView id="list_tour"/>
+			<TableView id="list_location"/>
 		</View>
-		<Require type="view" src="bar_menu">
-		</Require>
+		<Require type="view" src="bar_menu"/>
 	</Window>
 </Alloy>
