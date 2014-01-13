@@ -11,3 +11,7 @@ function prev(e){
 function imgClick(e){
 	alert('content img click');
 }
+
+function back(e){
+	openView('list_tour');
+}

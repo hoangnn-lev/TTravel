@@ -11,6 +11,9 @@ function Controller() {
     function imgClick() {
         alert("content img click");
     }
+    function back() {
+        openView("list_tour");
+    }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "detail_tour";
     arguments[0] ? arguments[0]["__parentSymbol"] : null;
@@ -50,6 +53,7 @@ function Controller() {
         id: "__alloyId0"
     });
     $.__views.topBar.add($.__views.__alloyId0);
+    back ? $.__views.__alloyId0.addEventListener("click", back) : __defers["$.__views.__alloyId0!click!back"] = true;
     $.__views.__alloyId1 = Ti.UI.createImageView({
         height: "20dp",
         width: "20dp",
@@ -411,6 +415,7 @@ function Controller() {
     $.__views.__alloyId30.setParent($.__views.detail_tour);
     exports.destroy = function() {};
     _.extend($, $.__views);
+    __defers["$.__views.__alloyId0!click!back"] && $.__views.__alloyId0.addEventListener("click", back);
     __defers["$.__views.__alloyId3!click!booking"] && $.__views.__alloyId3.addEventListener("click", booking);
     __defers["$.__views.__alloyId18!click!prev"] && $.__views.__alloyId18.addEventListener("click", prev);
     __defers["$.__views.imgContent!click!imgClick"] && $.__views.imgContent.addEventListener("click", imgClick);

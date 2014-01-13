@@ -1,0 +1,28 @@
+"#topBar":{
+	width:Ti.UI.FILL,
+	height:Ti.UI.FILL,,
+	backgroundColor:Ti.API.MAIN_COLOR,
+	height:'50dp',
+	top:0
+},
+"#topBarText":{
+	color:'#fff',
+	textAlign:'center',
+	top:'10dp',
+	font:{
+		fontSize:'20dp',
+	}
+},
+"#app":{
+	layout:"vertical",
+	width:Ti.UI.FILL,
+	height:Ti.UI.FILL,
+	bottom:'60dp'
+},
+".searchResultTitle":{
+	left:'40dp',
+	color:'#737373',
+	font:{
+		fontSize:'16dp'
+	}
+}

@@ -93,5 +93,5 @@ function create_list(img, title, day, departure, price) {
 }
 
 function back(e){
-	openView('home');
+	openView('search');
 }

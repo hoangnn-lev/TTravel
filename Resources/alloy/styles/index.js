@@ -82,10 +82,10 @@ module.exports = [ {
 }, {
     isClass: true,
     priority: 10000.0037,
-    key: "loginUser",
+    key: "copyright",
     style: {
         bottom: "20dp",
-        color: "#616161",
+        color: "#fff",
         height: "40dp",
         width: Ti.UI.FILL
     }
@@ -94,7 +94,7 @@ module.exports = [ {
     priority: 100000.0034,
     key: "loginBox",
     style: {
-        bottom: "30dp",
+        top: "210dp",
         height: Ti.UI.SIZE,
         width: Ti.UI.FILL
     }

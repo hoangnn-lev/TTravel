@@ -1,5 +1,5 @@
 "#loginBox":{
-	bottom:'30dp',
+	top:'210dp',
 	height:Ti.UI.SIZE,
 	width:Ti.UI.FILL
 	
@@ -15,7 +15,7 @@
 	right:'20dp',
 	border:Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
 	borderRadius:'15',
-	borderColor:'#00aced',
+	borderColor:'#00aced'
 },
 ".loginByFacebook":{
 	bottom:'120dp',
@@ -28,11 +28,11 @@
 	right:'20dp',
 	border:Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
 	borderRadius:'15',
-	borderColor:'#345291',
+	borderColor:'#345291'
 },
-'.loginUser':{
+'.copyright':{
 	bottom:'20dp',
-	color:'#616161',
+	color:'#fff',
 	height:'40dp',
 	width:Ti.UI.FILL,
 },

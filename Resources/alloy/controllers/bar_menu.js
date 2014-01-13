@@ -17,7 +17,22 @@ function Controller() {
     exports.destroy = function() {};
     _.extend($, $.__views);
     var deviceWidth = Ti.Platform.displayCaps.platformWidth / (Ti.Platform.displayCaps.dpi / 160);
-    var menu = [ "/menu/search.png", "/menu/favourite.png", "/menu/home.png", "/menu/history.png", "/menu/news.png" ];
+    var menu = [ {
+        img: "/menu/search.png",
+        v: "search"
+    }, {
+        img: "/menu/favourite.png",
+        v: ""
+    }, {
+        img: "/menu/home.png",
+        v: "home"
+    }, {
+        img: "/menu/history.png",
+        v: ""
+    }, {
+        img: "/menu/news.png",
+        v: ""
+    } ];
     for (var i = 0, n = menu.length; n > i; i++) {
         var menuItemWidth = deviceWidth / n;
         var view = Ti.UI.createView({
@@ -26,14 +41,16 @@ function Controller() {
             left: i * menuItemWidth + "dp"
         });
         var button = Ti.UI.createImageView({
-            image: menu[i],
+            image: menu[i].img,
             height: "30dp",
             width: "30dp",
+            v: menu[i].v,
             opacity: .5,
             zIndex: 2
         });
-        button.addEventListener("click", function() {
+        button.addEventListener("click", function(e) {
             this.setOpacity(1);
+            e.source.v && openView(e.source.v);
         });
         view.add(button);
         $.barMenu.add(view);

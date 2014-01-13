@@ -2,16 +2,16 @@
 	<Window backgroundImage="/login.jpg">
 
 		<View id="loginBox">
-			<View class="loginByFacebook">
+			<View class="loginByFacebook" onClick="loginByFacebook">
 				<ImageView zIndex="2" image="/icon/facebook.png" height="30dp" left="10dp" width="30dp"/>
-				<Label text="Đăng nhập bằng Facebook" left="45dp" onClick="loginByFacebook"/>
+				<Label text="Đăng nhập bằng Facebook" left="45dp"/>
 			</View>
-			<View class="loginByTwitter">
+			<View class="loginByTwitter" onClick="loginByTwitter">
 				<ImageView zIndex="2" image="/icon/twitter.png" height="30dp" left="10dp" width="30dp"/>
-				<Label text="Đăng nhập bằng Twitter" left="45dp" onClick="loginByTwitter"/>
+				<Label text="Đăng nhập bằng Twitter" left="45dp"/>
 			</View>
-			<View class="loginUser">
-				<Label text="Bạn đã có tài khoản? Đăng nhập." color="#00597b"  onClick="login"/>
+			<View class="copyright">
+				<Label text="©2014 Leverages Corporation" color="#00597b"/>
 			</View>
 
 		</View>

@@ -9,5 +9,9 @@
 // object. For example:
 //
 // Alloy.Globals.someGlobalFunction = function(){};
+require('config');
 
-Ti.API.MAIN_COLOR = '#069de4';//ff9308
+function openView(view) {
+	var v = Alloy.createController(view).getView();
+	activityScreen.nextWindow(v);
+}

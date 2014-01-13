@@ -21,7 +21,7 @@ $.list_location.addEventListener('click', function(e) {
 });
 
 $.searchButton.addEventListener('click', function(e) {
-	alert('searching');
+	Alloy.createController('search').getView().open();
 });
 
 /*

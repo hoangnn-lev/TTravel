@@ -2,7 +2,7 @@
 	<Window>
 		<View id="app">
 			<View id="topBar">
-				<ImageView height="30dp" width="12dp"  image="/icon/Previous@2x.png" left="10dp"/>
+				<ImageView height="30dp" width="12dp" onClick="back"  image="/icon/Previous@2x.png" left="10dp"/>
 				<Label text="Nha Trang" id="topBarText"/>
 				<ImageView height="30dp" width="30dp"  image="/icon/New@2x.png" right="10dp"/>
 			</View>

@@ -184,7 +184,7 @@ function Controller() {
         view_list_tour.open();
     });
     $.searchButton.addEventListener("click", function() {
-        alert("searching");
+        Alloy.createController("search").getView().open();
     });
     _.extend($, exports);
 }

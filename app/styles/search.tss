@@ -1,0 +1,132 @@
+"#topBar":{
+	width:Ti.UI.FILL,
+	height:Ti.UI.FILL,,
+	backgroundColor:Ti.API.MAIN_COLOR,
+	height:'50dp',
+	top:0
+},
+"#topBarText":{
+	color:'#fff',
+	textAlign:'center',
+	top:'10dp',
+	font:{
+		fontSize:'20dp',
+	}
+},
+"#app":{
+	layout:"vertical",
+	width:Ti.UI.FILL,
+	height:Ti.UI.FILL,
+	bottom:'60dp'
+},
+".headerTitle":{
+	backgroundColor:'#f8f8f8',
+	width:Ti.UI.FILL,
+	height:Ti.UI.SIZE,
+}
+".searchTextHeader":{
+	width:Ti.UI.FILL,
+	height:'30dp',
+	top:'15dp',
+	bottom:'5dp',
+	left:'20dp',
+	font:{
+		fontWeight:'bold',
+		fontSize:'14dp'
+	},
+	color:'#737373'
+},
+".blockSearch":{
+	width:Ti.UI.FILL,
+	height:Ti.UI.SIZE,
+	backgroundColor:'#fff',
+	layout:'vertical'
+},
+".item":{
+	width:Ti.UI.FILL,
+	height:Ti.UI.SIZE,
+	bottom:'10dp',
+	top:'10dp'
+}
+".line":{
+	top:0,
+	bottom:0	
+},
+".searchTextTitle":{
+	width:Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	left:'60dp',
+	color:'#737373',
+	top:0
+},
+".input":{
+	width:Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	left:'50dp',
+	top:0,
+	backgroundColor:'#fff',
+	backgroundFocusedColor:'#fff',
+	borderRadius:'0',
+	font:{
+		fontSize:'15dp'
+	},
+	paddingLeft:'0'
+},
+".date":{
+	backgroundColor:'#dfdfdf',
+	width:Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	height:'30dp',
+	width:'80dp',
+	left:'60dp',
+	border:Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	borderRadius:'15'
+},
+".labelDate":{
+	width:Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color:'#737373'
+},
+".price":{
+	backgroundColor:'#dfdfdf',
+	width:Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	height:'30dp',
+	width:'80dp',
+	left:'60dp',
+	border:Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	borderRadius:'15',
+	top:0
+},
+".priceActive":{
+	backgroundColor:'#ff7e25',
+	width:Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	height:'30dp',
+	width:'80dp',
+	left:'60dp',
+	border:Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	borderRadius:'15',
+	top:0
+},
+".labelPrice":{
+	width:Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color:'#737373',
+	
+},
+".labelPriceActive":{
+	width:Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color:'#fff',
+},
+".clearText":{
+	width:Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	font:{
+		fontWeight:'bold',
+		fontSize:'12dp'
+	},
+	right:'20dp',
+	color:'#ff7e25'
+}

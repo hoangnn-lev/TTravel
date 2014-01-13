@@ -1,14 +1,11 @@
 function Controller() {
-    function login() {
+    function loginByFacebook() {
         var home = Alloy.createController("home").getView();
         home.open();
     }
-    function loginByFacebook() {
-        var map = Alloy.createController("map").getView();
-        map.open();
-    }
     function loginByTwitter() {
-        alert("login By Twitter");
+        var home = Alloy.createController("home").getView();
+        home.open();
     }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "index";
@@ -27,7 +24,7 @@ function Controller() {
     });
     $.__views.index && $.addTopLevelView($.__views.index);
     $.__views.loginBox = Ti.UI.createView({
-        bottom: "30dp",
+        top: "210dp",
         height: Ti.UI.SIZE,
         width: Ti.UI.FILL,
         id: "loginBox"
@@ -48,6 +45,7 @@ function Controller() {
         id: "__alloyId36"
     });
     $.__views.loginBox.add($.__views.__alloyId36);
+    loginByFacebook ? $.__views.__alloyId36.addEventListener("click", loginByFacebook) : __defers["$.__views.__alloyId36!click!loginByFacebook"] = true;
     $.__views.__alloyId37 = Ti.UI.createImageView({
         zIndex: "2",
         image: "/icon/facebook.png",
@@ -67,7 +65,6 @@ function Controller() {
         id: "__alloyId38"
     });
     $.__views.__alloyId36.add($.__views.__alloyId38);
-    loginByFacebook ? $.__views.__alloyId38.addEventListener("click", loginByFacebook) : __defers["$.__views.__alloyId38!click!loginByFacebook"] = true;
     $.__views.__alloyId39 = Ti.UI.createView({
         bottom: "70dp",
         color: "#fff",
@@ -83,6 +80,7 @@ function Controller() {
         id: "__alloyId39"
     });
     $.__views.loginBox.add($.__views.__alloyId39);
+    loginByTwitter ? $.__views.__alloyId39.addEventListener("click", loginByTwitter) : __defers["$.__views.__alloyId39!click!loginByTwitter"] = true;
     $.__views.__alloyId40 = Ti.UI.createImageView({
         zIndex: "2",
         image: "/icon/twitter.png",
@@ -102,10 +100,9 @@ function Controller() {
         id: "__alloyId41"
     });
     $.__views.__alloyId39.add($.__views.__alloyId41);
-    loginByTwitter ? $.__views.__alloyId41.addEventListener("click", loginByTwitter) : __defers["$.__views.__alloyId41!click!loginByTwitter"] = true;
     $.__views.__alloyId42 = Ti.UI.createView({
         bottom: "20dp",
-        color: "#616161",
+        color: "#fff",
         height: "40dp",
         width: Ti.UI.FILL,
         id: "__alloyId42"
@@ -116,17 +113,15 @@ function Controller() {
             fontSize: "15dp"
         },
         color: "#00597b",
-        text: "Bạn đã có tài khoản? Đăng nhập.",
+        text: "©2014 Leverages Corporation",
         id: "__alloyId43"
     });
     $.__views.__alloyId42.add($.__views.__alloyId43);
-    login ? $.__views.__alloyId43.addEventListener("click", login) : __defers["$.__views.__alloyId43!click!login"] = true;
     exports.destroy = function() {};
     _.extend($, $.__views);
     $.index.open();
-    __defers["$.__views.__alloyId38!click!loginByFacebook"] && $.__views.__alloyId38.addEventListener("click", loginByFacebook);
-    __defers["$.__views.__alloyId41!click!loginByTwitter"] && $.__views.__alloyId41.addEventListener("click", loginByTwitter);
-    __defers["$.__views.__alloyId43!click!login"] && $.__views.__alloyId43.addEventListener("click", login);
+    __defers["$.__views.__alloyId36!click!loginByFacebook"] && $.__views.__alloyId36.addEventListener("click", loginByFacebook);
+    __defers["$.__views.__alloyId39!click!loginByTwitter"] && $.__views.__alloyId39.addEventListener("click", loginByTwitter);
     _.extend($, exports);
 }
 

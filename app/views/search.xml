@@ -1,0 +1,91 @@
+<Alloy>
+	<Window>
+		<View id="app">
+			<View id="topBar">
+				<ImageView height="30dp" onClick="back" width="12dp"  image="/icon/Previous@2x.png" left="10dp"/>
+				<Label text="Search tour" id="topBarText"/>
+				<ImageView height="30dp" zIndex="2" width="30dp" onClick="search" image="/icon/search-icon-white.png" right="10dp"/>
+			</View>
+			<View layout="vertical">
+
+				<!--Block lịch trình-->
+				<View class="headerTitle">
+					<Label text="LỊCH TRÌNH" class="searchTextHeader"/>
+				</View>
+				<Label class="line"></Label>
+				<View class="blockSearch">
+					<View class="item">
+						<ImageView image="/icon/near_me.png" width="20dp" height="20dp" left="25dp" />
+						<Label text="TP. Hồ Chí Minh" class="searchTextTitle" right="30dp"/>
+						<ImageView zIndex="2" image="/icon/location.png" onClick="changeLocation" width="20dp" height="20dp" right="25dp" />
+					</View>
+					<Label class="line" left="60dp"></Label>
+					<View class="item">
+						<ImageView image="/icon/marker.png" width="20dp" height="20dp" left="25dp" />
+						<TextField hintText="Địa điểm đến ?" class="input"/>
+					</View>
+					<Label class="line" left="60dp"></Label>
+					<View class="item">
+						<ImageView image="/icon/person.png" width="20dp" height="20dp" left="25dp" />
+						<TextField hintText="Số người ?" text="6" class="input"/>
+					</View>
+				</View>
+				<!--End block lịch trình-->
+
+				<!--Block bộ lọc-->
+				<View class="headerTitle">
+					<Label text="FILLTER" class="searchTextHeader"/>
+					<Label text="CLEAR ALL" onClick="clearFilter" class="clearText"/>
+				</View>
+				<Label class="line"></Label>
+
+				<!--Thời gian-->
+				<View class="item">
+					<ImageView image="/icon/time.png" width="20dp" height="20dp" left="25dp" />
+					<Label text="Thời gian" class="searchTextTitle"/>
+				</View>
+				<View class="item" top="0">
+					<View class="date" left="60dp">
+						<Label text="16/02/13" class="labelDate"/>
+					</View>
+					<View class="date" left="150dp" width="40dp">
+						<Label text="-" class="labelDate"/>
+					</View>
+					<View class="date" left="200dp">
+						<Label text="20/02/13" class="labelDate"/>
+					</View>
+				</View>
+				<!--end Thời gian-->
+				<Label class="line"></Label>
+				<!--Giá tour-->
+				<View class="item">
+					<ImageView image="/icon/payment.png" width="20dp" height="20dp" left="25dp" />
+					<Label text="Mức giá" class="searchTextTitle"/>
+				</View>
+				<View class="item" top="0">
+					<View class="priceActive" left="60dp">
+						<Label text="Tất cả" class="labelPriceActive"/>
+					</View>
+					<View class="price" left="150dp">
+						<Label text="$$" class="labelPrice"/>
+					</View>
+					<View class="price" left="240dp">
+						<Label text="$$$" class="labelPrice"/>
+					</View>
+					<View class="price" left="60dp" top="40dp">
+						<Label text="$$$$" class="labelPrice"/>
+					</View>
+					<View class="price" left="150dp" top="40dp">
+						<Label text="$$$$$" class="labelPrice"/>
+					</View>
+				</View>
+				<!--end giá-->
+
+				<!--End block bộ lọc-->
+
+			</View>
+
+		</View>
+		<Require type="view" src="bar_menu"/>
+	</Window>
+</Alloy>

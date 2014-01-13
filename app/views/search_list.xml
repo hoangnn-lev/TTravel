@@ -1,0 +1,19 @@
+<Alloy>
+	<Window>
+		<View id="app">
+			<View id="topBar">
+				<ImageView height="30dp" onClick="back"  width="12dp"  image="/icon/Previous@2x.png" left="10dp"/>
+				<Label text="Search tour" id="topBarText"/>
+			</View>
+			<View height="45dp" backgroundColor="#f6f6f6">
+				<ImageView image="/icon/search-icon.png" left="10dp" width="25dp" height="25dp"/>
+				<Label text="Du lịch Nha Trang, ngày 16/02/13" class="searchResultTitle"/>
+			</View>
+			<Label class="line"/>
+			<View>
+				<TableView id="list_tours"/>
+			</View>
+		</View>
+		<Require type="view" src="bar_menu"/>
+	</Window>
+</Alloy>
