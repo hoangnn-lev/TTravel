@@ -1,0 +1,27 @@
+<Alloy>
+	<View id="leftMenu" layout="vertical">
+		<View class="leftMenuHeader">
+			<View class="leftMenuAvarta">
+				<ImageView class="leftMenuImgAvarta" image="/midu.jpg"></ImageView>
+			</View>
+			<Label class="leftMenuName" text="Midu"/>
+			<Label class="leftMenuProfile" onClick="profile" text="Xem thông tin"/>
+		</View>
+		<TableView backgroundColor="#212529" separatorColor="#3d4349">
+			<TableViewRow>
+				<ImageView left="20dp"  image="/icon/about.png" height="25dp" width="25dp"/>
+				<Label color="#afb6bf" left="60dp" text="Giới thiệu"/>
+			</TableViewRow>
+			<TableViewRow>
+				<ImageView left="20dp"  image="/icon/profile_update.png" height="25dp" width="25dp"/>
+				<Label color="#afb6bf" onClick="profile"  left="60dp" text="Cập nhật thông tin"/>
+			</TableViewRow>
+			<TableViewRow>
+				<ImageView left="20dp"  image="/icon/setting.png" height="25dp" width="25dp"/>
+				<Label color="#afb6bf" left="60dp" text="Cài đặt"/>
+			</TableViewRow>
+
+		</TableView>
+
+	</View>
+</Alloy>

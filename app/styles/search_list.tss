@@ -13,12 +13,6 @@
 		fontSize:'20dp',
 	}
 },
-"#app":{
-	layout:"vertical",
-	width:Ti.UI.FILL,
-	height:Ti.UI.FILL,
-	bottom:'60dp'
-},
 ".searchResultTitle":{
 	left:'40dp',
 	color:'#737373',

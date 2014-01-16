@@ -40,7 +40,7 @@ module.exports = [ {
     }
 }, {
     isClass: true,
-    priority: 10000.0067,
+    priority: 10000.0098,
     key: "searchResultTitle",
     style: {
         left: "40dp",
@@ -51,7 +51,17 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0064,
+    priority: 100000.0005,
+    key: "app",
+    style: {
+        layout: "vertical",
+        width: Ti.UI.FILL,
+        height: Ti.UI.FILL,
+        bottom: "50dp"
+    }
+}, {
+    isId: true,
+    priority: 100000.0096,
     key: "topBar",
     style: {
         width: Ti.UI.FILL,
@@ -61,7 +71,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0065,
+    priority: 100000.0097,
     key: "topBarText",
     style: {
         color: "#fff",
@@ -70,15 +80,5 @@ module.exports = [ {
         font: {
             fontSize: "20dp"
         }
-    }
-}, {
-    isId: true,
-    priority: 100000.0066,
-    key: "app",
-    style: {
-        layout: "vertical",
-        width: Ti.UI.FILL,
-        height: Ti.UI.FILL,
-        bottom: "60dp"
     }
 } ];

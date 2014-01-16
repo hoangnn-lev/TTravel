@@ -1,0 +1,31 @@
+"#topBar":{
+	width:Ti.UI.FILL,
+	height:Ti.UI.FILL,,
+	backgroundColor:Ti.API.MAIN_COLOR,
+	height:'50dp',
+	top:0
+},
+"#searchBar":{
+	backgroundColor:'#eeeeee',
+	width:Ti.UI.FILL,
+	height:'60dp'
+},
+"#searchIcon":{
+	border:Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	borderRadius:'15',
+	width:'50dp',
+	height:'40dp',
+	backgroundColor:'#fff',
+	left:'10dp'
+},
+".newsSearchText":{
+	top:'10dp',
+	backgroundFocusedColor:"#fff", 
+	bottom:"10dp", 
+	left:"44dp", 
+	right:"10dp",
+	font:{
+		fontSize:"15dp"
+	},
+	color:'#d3d3d3'
+}

@@ -1,0 +1,15 @@
+<Alloy>
+	<Window>
+		<View id="app">
+			<View id="topBar">
+				<ImageView height="30dp" width="12dp" onClick="back"  image="/icon/Previous@2x.png" left="10dp"/>
+				<Label text="Danh sách tour đã xem" id="topBarText"/>
+			</View>
+			
+			<View>
+				<TableView separatorColor="#eaeaea"  id="list_tours"/>
+			</View>
+		</View>
+		<Require type="view" src="bar_menu"/>
+	</Window>
+</Alloy>

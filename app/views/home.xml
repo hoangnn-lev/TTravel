@@ -13,7 +13,7 @@
 					<Button id="searchButton" title="TÌM"/>
 				</View>
 			</View>
-			<TableView id="list_location"/>
+			<TableView separatorColor="#eaeaea"  id="list_location"/>
 		</View>
 		<Require type="view" src="bar_menu"/>
 	</Window>

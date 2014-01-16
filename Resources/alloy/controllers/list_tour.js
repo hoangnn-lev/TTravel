@@ -81,7 +81,7 @@ function Controller() {
         layout: "vertical",
         width: Ti.UI.FILL,
         height: Ti.UI.FILL,
-        bottom: "60dp",
+        bottom: "50dp",
         id: "app"
     });
     $.__views.list_tour.add($.__views.app);
@@ -93,15 +93,15 @@ function Controller() {
         id: "topBar"
     });
     $.__views.app.add($.__views.topBar);
-    $.__views.__alloyId44 = Ti.UI.createImageView({
+    $.__views.__alloyId78 = Ti.UI.createImageView({
         height: "30dp",
         width: "12dp",
         image: "/icon/Previous@2x.png",
         left: "10dp",
-        id: "__alloyId44"
+        id: "__alloyId78"
     });
-    $.__views.topBar.add($.__views.__alloyId44);
-    back ? $.__views.__alloyId44.addEventListener("click", back) : __defers["$.__views.__alloyId44!click!back"] = true;
+    $.__views.topBar.add($.__views.__alloyId78);
+    back ? $.__views.__alloyId78.addEventListener("click", back) : __defers["$.__views.__alloyId78!click!back"] = true;
     $.__views.topBarText = Ti.UI.createLabel({
         font: {
             fontSize: "20dp"
@@ -113,39 +113,40 @@ function Controller() {
         id: "topBarText"
     });
     $.__views.topBar.add($.__views.topBarText);
-    $.__views.__alloyId45 = Ti.UI.createImageView({
+    $.__views.__alloyId79 = Ti.UI.createImageView({
         height: "30dp",
         width: "30dp",
         image: "/icon/New@2x.png",
         right: "10dp",
-        id: "__alloyId45"
+        id: "__alloyId79"
     });
-    $.__views.topBar.add($.__views.__alloyId45);
-    $.__views.__alloyId46 = Ti.UI.createView({
+    $.__views.topBar.add($.__views.__alloyId79);
+    $.__views.__alloyId80 = Ti.UI.createView({
         height: Ti.UI.SIZE,
-        id: "__alloyId46"
+        id: "__alloyId80"
     });
-    $.__views.app.add($.__views.__alloyId46);
-    $.__views.__alloyId47 = Ti.UI.createImageView({
+    $.__views.app.add($.__views.__alloyId80);
+    $.__views.__alloyId81 = Ti.UI.createImageView({
         top: "0",
         image: "/ads.jpg",
         width: Ti.UI.FILL,
-        id: "__alloyId47"
+        id: "__alloyId81"
     });
-    $.__views.__alloyId46.add($.__views.__alloyId47);
-    $.__views.__alloyId48 = Ti.UI.createView({
-        id: "__alloyId48"
+    $.__views.__alloyId80.add($.__views.__alloyId81);
+    $.__views.__alloyId82 = Ti.UI.createView({
+        id: "__alloyId82"
     });
-    $.__views.app.add($.__views.__alloyId48);
+    $.__views.app.add($.__views.__alloyId82);
     $.__views.list_tours = Ti.UI.createTableView({
+        separatorColor: "#eaeaea",
         id: "list_tours"
     });
-    $.__views.__alloyId48.add($.__views.list_tours);
-    $.__views.__alloyId49 = Alloy.createController("bar_menu", {
-        id: "__alloyId49",
+    $.__views.__alloyId82.add($.__views.list_tours);
+    $.__views.__alloyId83 = Alloy.createController("bar_menu", {
+        id: "__alloyId83",
         __parentSymbol: $.__views.list_tour
     });
-    $.__views.__alloyId49.setParent($.__views.list_tour);
+    $.__views.__alloyId83.setParent($.__views.list_tour);
     exports.destroy = function() {};
     _.extend($, $.__views);
     var list = [];
@@ -163,7 +164,7 @@ function Controller() {
     $.list_tours.addEventListener("click", function() {
         Alloy.createController("detail_tour").getView().open();
     });
-    __defers["$.__views.__alloyId44!click!back"] && $.__views.__alloyId44.addEventListener("click", back);
+    __defers["$.__views.__alloyId78!click!back"] && $.__views.__alloyId78.addEventListener("click", back);
     _.extend($, exports);
 }
 

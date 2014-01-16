@@ -81,7 +81,7 @@ function Controller() {
         layout: "vertical",
         width: Ti.UI.FILL,
         height: Ti.UI.FILL,
-        bottom: "60dp",
+        bottom: "50dp",
         id: "app"
     });
     $.__views.search_list.add($.__views.app);
@@ -93,15 +93,15 @@ function Controller() {
         id: "topBar"
     });
     $.__views.app.add($.__views.topBar);
-    $.__views.__alloyId101 = Ti.UI.createImageView({
+    $.__views.__alloyId150 = Ti.UI.createImageView({
         height: "30dp",
         width: "12dp",
         image: "/icon/Previous@2x.png",
         left: "10dp",
-        id: "__alloyId101"
+        id: "__alloyId150"
     });
-    $.__views.topBar.add($.__views.__alloyId101);
-    back ? $.__views.__alloyId101.addEventListener("click", back) : __defers["$.__views.__alloyId101!click!back"] = true;
+    $.__views.topBar.add($.__views.__alloyId150);
+    back ? $.__views.__alloyId150.addEventListener("click", back) : __defers["$.__views.__alloyId150!click!back"] = true;
     $.__views.topBarText = Ti.UI.createLabel({
         font: {
             fontSize: "20dp"
@@ -113,31 +113,31 @@ function Controller() {
         id: "topBarText"
     });
     $.__views.topBar.add($.__views.topBarText);
-    $.__views.__alloyId102 = Ti.UI.createView({
+    $.__views.__alloyId151 = Ti.UI.createView({
         height: "45dp",
         backgroundColor: "#f6f6f6",
-        id: "__alloyId102"
+        id: "__alloyId151"
     });
-    $.__views.app.add($.__views.__alloyId102);
-    $.__views.__alloyId103 = Ti.UI.createImageView({
+    $.__views.app.add($.__views.__alloyId151);
+    $.__views.__alloyId152 = Ti.UI.createImageView({
         image: "/icon/search-icon.png",
         left: "10dp",
         width: "25dp",
         height: "25dp",
-        id: "__alloyId103"
+        id: "__alloyId152"
     });
-    $.__views.__alloyId102.add($.__views.__alloyId103);
-    $.__views.__alloyId104 = Ti.UI.createLabel({
+    $.__views.__alloyId151.add($.__views.__alloyId152);
+    $.__views.__alloyId153 = Ti.UI.createLabel({
         font: {
             fontSize: "16dp"
         },
         left: "40dp",
         color: "#737373",
         text: "Du lịch Nha Trang, ngày 16/02/13",
-        id: "__alloyId104"
+        id: "__alloyId153"
     });
-    $.__views.__alloyId102.add($.__views.__alloyId104);
-    $.__views.__alloyId105 = Ti.UI.createLabel({
+    $.__views.__alloyId151.add($.__views.__alloyId153);
+    $.__views.__alloyId154 = Ti.UI.createLabel({
         font: {
             fontSize: "15dp"
         },
@@ -146,22 +146,23 @@ function Controller() {
         backgroundColor: "#dfdfdf",
         top: "2dp",
         bottom: "2dp",
-        id: "__alloyId105"
+        id: "__alloyId154"
     });
-    $.__views.app.add($.__views.__alloyId105);
-    $.__views.__alloyId106 = Ti.UI.createView({
-        id: "__alloyId106"
+    $.__views.app.add($.__views.__alloyId154);
+    $.__views.__alloyId155 = Ti.UI.createView({
+        id: "__alloyId155"
     });
-    $.__views.app.add($.__views.__alloyId106);
+    $.__views.app.add($.__views.__alloyId155);
     $.__views.list_tours = Ti.UI.createTableView({
+        separatorColor: "#eaeaea",
         id: "list_tours"
     });
-    $.__views.__alloyId106.add($.__views.list_tours);
-    $.__views.__alloyId107 = Alloy.createController("bar_menu", {
-        id: "__alloyId107",
+    $.__views.__alloyId155.add($.__views.list_tours);
+    $.__views.__alloyId156 = Alloy.createController("bar_menu", {
+        id: "__alloyId156",
         __parentSymbol: $.__views.search_list
     });
-    $.__views.__alloyId107.setParent($.__views.search_list);
+    $.__views.__alloyId156.setParent($.__views.search_list);
     exports.destroy = function() {};
     _.extend($, $.__views);
     var list = [];
@@ -179,7 +180,7 @@ function Controller() {
     $.list_tours.addEventListener("click", function() {
         Alloy.createController("detail_tour").getView().open();
     });
-    __defers["$.__views.__alloyId101!click!back"] && $.__views.__alloyId101.addEventListener("click", back);
+    __defers["$.__views.__alloyId150!click!back"] && $.__views.__alloyId150.addEventListener("click", back);
     _.extend($, exports);
 }
 

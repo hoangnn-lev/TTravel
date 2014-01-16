@@ -1,0 +1,13 @@
+<Alloy>
+	<Window>
+		<View id="app">
+			<View id="topBar">
+				<ImageView height="30dp" width="12dp" onClick="back"  image="/icon/Previous@2x.png" left="10dp"/>
+				<ImageView height="20dp" width="20dp"  image="/icon/n.png" left="35dp"/>
+				<Label text="20 Hoa hậu đẹp nhất 2013" id="topBarText"/>
+			</View>
+			
+		</View>
+		<Require type="view" src="bar_menu"/>
+	</Window>
+</Alloy>

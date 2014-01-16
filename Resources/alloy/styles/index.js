@@ -29,7 +29,7 @@ module.exports = [ {
     }
 }, {
     isApi: true,
-    priority: 1000.0038,
+    priority: 1000.0046,
     key: "Label",
     style: {
         color: "#fff"
@@ -47,7 +47,7 @@ module.exports = [ {
     }
 }, {
     isClass: true,
-    priority: 10000.0035,
+    priority: 10000.0043,
     key: "loginByTwitter",
     style: {
         bottom: "70dp",
@@ -64,7 +64,7 @@ module.exports = [ {
     }
 }, {
     isClass: true,
-    priority: 10000.0036,
+    priority: 10000.0044,
     key: "loginByFacebook",
     style: {
         bottom: "120dp",
@@ -81,7 +81,7 @@ module.exports = [ {
     }
 }, {
     isClass: true,
-    priority: 10000.0037,
+    priority: 10000.0045,
     key: "copyright",
     style: {
         bottom: "20dp",
@@ -90,8 +90,32 @@ module.exports = [ {
         width: Ti.UI.FILL
     }
 }, {
+    isClass: true,
+    priority: 10000.0047,
+    key: "popupField",
+    style: {
+        top: "10dp",
+        left: "20dp",
+        right: "20dp",
+        backgroundColor: "transparent",
+        backgroundFocusedColor: "#fff",
+        font: {
+            fontSize: "15dp"
+        }
+    }
+}, {
     isId: true,
-    priority: 100000.0034,
+    priority: 100000.0005,
+    key: "app",
+    style: {
+        layout: "vertical",
+        width: Ti.UI.FILL,
+        height: Ti.UI.FILL,
+        bottom: "50dp"
+    }
+}, {
+    isId: true,
+    priority: 100000.0042,
     key: "loginBox",
     style: {
         top: "210dp",

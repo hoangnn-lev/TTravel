@@ -70,7 +70,7 @@ function Controller() {
         layout: "vertical",
         width: Ti.UI.FILL,
         height: Ti.UI.FILL,
-        bottom: "60dp",
+        bottom: "50dp",
         id: "app"
     });
     $.__views.home.add($.__views.app);
@@ -80,13 +80,13 @@ function Controller() {
         id: "banner"
     });
     $.__views.app.add($.__views.banner);
-    $.__views.__alloyId31 = Ti.UI.createImageView({
+    $.__views.__alloyId41 = Ti.UI.createImageView({
         image: "/banner/nha-trang.jpg",
         width: Ti.UI.FILL,
         top: "0",
-        id: "__alloyId31"
+        id: "__alloyId41"
     });
-    $.__views.banner.add($.__views.__alloyId31);
+    $.__views.banner.add($.__views.__alloyId41);
     $.__views.search = Ti.UI.createView({
         backgroundColor: Ti.API.MAIN_COLOR,
         height: "60dp",
@@ -95,10 +95,10 @@ function Controller() {
         id: "search"
     });
     $.__views.app.add($.__views.search);
-    $.__views.__alloyId32 = Ti.UI.createView({
-        id: "__alloyId32"
+    $.__views.__alloyId42 = Ti.UI.createView({
+        id: "__alloyId42"
     });
-    $.__views.search.add($.__views.__alloyId32);
+    $.__views.search.add($.__views.__alloyId42);
     $.__views.searchIcon = Ti.UI.createView({
         border: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
         borderRadius: "15",
@@ -108,17 +108,17 @@ function Controller() {
         left: "10dp",
         id: "searchIcon"
     });
-    $.__views.__alloyId32.add($.__views.searchIcon);
-    $.__views.__alloyId33 = Ti.UI.createImageView({
+    $.__views.__alloyId42.add($.__views.searchIcon);
+    $.__views.__alloyId43 = Ti.UI.createImageView({
         left: "8dp",
         zIndex: "1",
         image: "/icon/search-icon.png",
         height: "25dp",
         width: "25dp",
         top: "7dp",
-        id: "__alloyId33"
+        id: "__alloyId43"
     });
-    $.__views.searchIcon.add($.__views.__alloyId33);
+    $.__views.searchIcon.add($.__views.__alloyId43);
     $.__views.searchBar = Ti.UI.createTextField({
         backgroundColor: "#fff",
         backgroundFocusedColor: "#fff",
@@ -138,7 +138,7 @@ function Controller() {
         id: "searchBar",
         hintText: "Nơi bạn muốn đến..."
     });
-    $.__views.__alloyId32.add($.__views.searchBar);
+    $.__views.__alloyId42.add($.__views.searchBar);
     $.__views.searchButton = Ti.UI.createButton({
         height: "40dp",
         top: "10dp",
@@ -154,16 +154,17 @@ function Controller() {
         id: "searchButton",
         title: "TÌM"
     });
-    $.__views.__alloyId32.add($.__views.searchButton);
+    $.__views.__alloyId42.add($.__views.searchButton);
     $.__views.list_location = Ti.UI.createTableView({
+        separatorColor: "#eaeaea",
         id: "list_location"
     });
     $.__views.app.add($.__views.list_location);
-    $.__views.__alloyId34 = Alloy.createController("bar_menu", {
-        id: "__alloyId34",
+    $.__views.__alloyId44 = Alloy.createController("bar_menu", {
+        id: "__alloyId44",
         __parentSymbol: $.__views.home
     });
-    $.__views.__alloyId34.setParent($.__views.home);
+    $.__views.__alloyId44.setParent($.__views.home);
     exports.destroy = function() {};
     _.extend($, $.__views);
     var list = [];

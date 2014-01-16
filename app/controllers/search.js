@@ -1,15 +1,15 @@
-function search(e){
+function search(e) {
 	Alloy.createController('search_list').getView().open();
 }
 
-function changeLocation(e){
+function changeLocation(e) {
 	alert('Change location');
 }
 
-function clearFilter(e){
+function clearFilter(e) {
 	alert('clear all filter');
 }
 
-function back(e){
+function back(e) {
 	openView('home');
 }

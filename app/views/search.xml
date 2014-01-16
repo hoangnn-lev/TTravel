@@ -1,5 +1,6 @@
 <Alloy>
 	<Window>
+		
 		<View id="app">
 			<View id="topBar">
 				<ImageView height="30dp" onClick="back" width="12dp"  image="/icon/Previous@2x.png" left="10dp"/>

@@ -1,0 +1,20 @@
+<Alloy>
+	<Window>
+		<View id="app">
+			<View id="avarta" backgroundImage="/midu.jpg">
+				<ImageView zIndex="2" image="/icon/upload.png" class="uploadCircle"/>
+				<View class="info">
+					<Label class="name" text="MỸ DUNG"/>
+					<Label class="address" text="2 Hải Triều Quận 1, TP. HCM"/>
+					<ImageView zIndex="2" image="/icon/profile/favourite.png" class="favourite"/>
+					<Label class="favouriteCount" text="5"/>
+				</View>
+
+			</View>
+			<Label class="line" top="0"/>
+			<TableView separatorColor="#eaeaea" id="list_profile"/>
+
+		</View>
+		<Require type="view" src="bar_menu"/>
+	</Window>
+</Alloy>

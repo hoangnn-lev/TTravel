@@ -13,12 +13,6 @@
 		fontSize:'20dp',
 	}
 },
-"#app":{
-	layout:"vertical",
-	width:Ti.UI.FILL,
-	height:Ti.UI.FILL,
-	bottom:'60dp'
-},
 ".headerTitle":{
 	backgroundColor:'#f8f8f8',
 	width:Ti.UI.FILL,

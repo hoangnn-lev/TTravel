@@ -11,10 +11,22 @@
 				<Label text="Đăng nhập bằng Twitter" left="45dp"/>
 			</View>
 			<View class="copyright">
-				<Label text="©2014 Leverages Corporation" color="#00597b"/>
+				<Label text="Bạn đã có tài khoản? Đăng nhập" onClick="showDialog" color="#00597b"/>
 			</View>
 
 		</View>
+		<AlertDialog id="dialog" onClick="doClick" class="dialog" title="Đăng nhập"  cancel="1">
 
+			<View backgroundColor="#fff" layout="vertical">
+				<TextField class="popupField" hintText="Email"/>
+				<Label class="line"/>
+				<TextField class="popupField" hintText="Mật khẩu" passwordMask="true"/>
+			</View>
+			<ButtonNames>
+				<ButtonName>Đăng nhập</ButtonName>
+				<ButtonName>Hủy</ButtonName>
+			</ButtonNames>
+		</AlertDialog>
 	</Window>
+
 </Alloy>

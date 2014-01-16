@@ -40,7 +40,7 @@ module.exports = [ {
     }
 }, {
     isClass: true,
-    priority: 10000.0049,
+    priority: 10000.0081,
     key: "headerTitle",
     style: {
         backgroundColor: "#f8f8f8",
@@ -49,7 +49,7 @@ module.exports = [ {
     }
 }, {
     isClass: true,
-    priority: 10000.005,
+    priority: 10000.0082,
     key: "searchTextHeader",
     style: {
         width: Ti.UI.FILL,
@@ -65,7 +65,7 @@ module.exports = [ {
     }
 }, {
     isClass: true,
-    priority: 10000.0051,
+    priority: 10000.0083,
     key: "blockSearch",
     style: {
         width: Ti.UI.FILL,
@@ -75,7 +75,7 @@ module.exports = [ {
     }
 }, {
     isClass: true,
-    priority: 10000.0052,
+    priority: 10000.0084,
     key: "item",
     style: {
         width: Ti.UI.FILL,
@@ -85,7 +85,7 @@ module.exports = [ {
     }
 }, {
     isClass: true,
-    priority: 10000.0053,
+    priority: 10000.0085,
     key: "line",
     style: {
         top: 0,
@@ -93,7 +93,7 @@ module.exports = [ {
     }
 }, {
     isClass: true,
-    priority: 10000.0054,
+    priority: 10000.0086,
     key: "searchTextTitle",
     style: {
         width: Ti.UI.FILL,
@@ -104,7 +104,7 @@ module.exports = [ {
     }
 }, {
     isClass: true,
-    priority: 10000.0055,
+    priority: 10000.0087,
     key: "input",
     style: {
         width: Ti.UI.FILL,
@@ -121,7 +121,7 @@ module.exports = [ {
     }
 }, {
     isClass: true,
-    priority: 10000.0056,
+    priority: 10000.0088,
     key: "date",
     style: {
         backgroundColor: "#dfdfdf",
@@ -133,7 +133,7 @@ module.exports = [ {
     }
 }, {
     isClass: true,
-    priority: 10000.0057,
+    priority: 10000.0089,
     key: "labelDate",
     style: {
         width: Ti.UI.SIZE,
@@ -142,7 +142,7 @@ module.exports = [ {
     }
 }, {
     isClass: true,
-    priority: 10000.0058,
+    priority: 10000.009,
     key: "price",
     style: {
         backgroundColor: "#dfdfdf",
@@ -155,7 +155,7 @@ module.exports = [ {
     }
 }, {
     isClass: true,
-    priority: 10000.0059,
+    priority: 10000.0091,
     key: "priceActive",
     style: {
         backgroundColor: "#ff7e25",
@@ -168,7 +168,7 @@ module.exports = [ {
     }
 }, {
     isClass: true,
-    priority: 10000.006,
+    priority: 10000.0092,
     key: "labelPrice",
     style: {
         width: Ti.UI.SIZE,
@@ -177,7 +177,7 @@ module.exports = [ {
     }
 }, {
     isClass: true,
-    priority: 10000.0061,
+    priority: 10000.0093,
     key: "labelPriceActive",
     style: {
         width: Ti.UI.SIZE,
@@ -186,7 +186,7 @@ module.exports = [ {
     }
 }, {
     isClass: true,
-    priority: 10000.0062,
+    priority: 10000.0094,
     key: "clearText",
     style: {
         width: Ti.UI.SIZE,
@@ -200,7 +200,17 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0046,
+    priority: 100000.0005,
+    key: "app",
+    style: {
+        layout: "vertical",
+        width: Ti.UI.FILL,
+        height: Ti.UI.FILL,
+        bottom: "50dp"
+    }
+}, {
+    isId: true,
+    priority: 100000.0079,
     key: "topBar",
     style: {
         width: Ti.UI.FILL,
@@ -210,7 +220,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0047,
+    priority: 100000.008,
     key: "topBarText",
     style: {
         color: "#fff",
@@ -219,15 +229,5 @@ module.exports = [ {
         font: {
             fontSize: "20dp"
         }
-    }
-}, {
-    isId: true,
-    priority: 100000.0048,
-    key: "app",
-    style: {
-        layout: "vertical",
-        width: Ti.UI.FILL,
-        height: Ti.UI.FILL,
-        bottom: "60dp"
     }
 } ];

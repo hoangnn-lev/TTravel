@@ -38,4 +38,14 @@
 },
 "Label":{
 	color:'#fff'
+},
+".popupField":{
+	top:'10dp',
+	left:'20dp',
+	right:'20dp',
+	backgroundColor:'transparent',
+	backgroundFocusedColor:'#fff',
+	font:{
+		fontSize:'15dp'
+	}
 }

@@ -22,22 +22,22 @@ function Controller() {
         v: "search"
     }, {
         img: "/menu/favourite.png",
-        v: ""
+        v: "favourite"
     }, {
-        img: "/menu/home.png",
+        img: "/menu/home-active.png",
         v: "home"
     }, {
         img: "/menu/history.png",
-        v: ""
+        v: "history"
     }, {
         img: "/menu/news.png",
-        v: ""
+        v: "news"
     } ];
     for (var i = 0, n = menu.length; n > i; i++) {
         var menuItemWidth = deviceWidth / n;
         var view = Ti.UI.createView({
             width: menuItemWidth + "dp",
-            height: "40dp",
+            height: "50dp",
             left: i * menuItemWidth + "dp"
         });
         var button = Ti.UI.createImageView({
@@ -45,11 +45,9 @@ function Controller() {
             height: "30dp",
             width: "30dp",
             v: menu[i].v,
-            opacity: .5,
             zIndex: 2
         });
         button.addEventListener("click", function(e) {
-            this.setOpacity(1);
             e.source.v && openView(e.source.v);
         });
         view.add(button);

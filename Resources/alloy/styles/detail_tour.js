@@ -40,7 +40,7 @@ module.exports = [ {
     }
 }, {
     isClass: true,
-    priority: 10000.0015,
+    priority: 10000.0018,
     key: "tourTitle",
     style: {
         color: "#f28b07",
@@ -51,7 +51,7 @@ module.exports = [ {
     }
 }, {
     isClass: true,
-    priority: 10000.0016,
+    priority: 10000.0019,
     key: "price",
     style: {
         color: "#069de4",
@@ -62,7 +62,7 @@ module.exports = [ {
     }
 }, {
     isClass: true,
-    priority: 10000.0017,
+    priority: 10000.002,
     key: "infoTitle",
     style: {
         color: "#737373",
@@ -70,7 +70,7 @@ module.exports = [ {
     }
 }, {
     isClass: true,
-    priority: 10000.0018,
+    priority: 10000.0021,
     key: "title",
     style: {
         width: Ti.UI.FILL,
@@ -78,7 +78,7 @@ module.exports = [ {
     }
 }, {
     isClass: true,
-    priority: 10000.0019,
+    priority: 10000.0022,
     key: "itemDescription",
     style: {
         width: Ti.UI.FILL,
@@ -86,7 +86,7 @@ module.exports = [ {
     }
 }, {
     isClass: true,
-    priority: 10000.0023,
+    priority: 10000.0026,
     key: "linkItem",
     style: {
         left: "20dp",
@@ -94,7 +94,7 @@ module.exports = [ {
     }
 }, {
     isClass: true,
-    priority: 10000.0024,
+    priority: 10000.0027,
     key: "imgLinkItem",
     style: {
         width: "15dp",
@@ -103,17 +103,17 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0009,
+    priority: 100000.0005,
     key: "app",
     style: {
         layout: "vertical",
         width: Ti.UI.FILL,
         height: Ti.UI.FILL,
-        bottom: "60dp"
+        bottom: "50dp"
     }
 }, {
     isId: true,
-    priority: 100000.001,
+    priority: 100000.0013,
     key: "topBar",
     style: {
         width: Ti.UI.FILL,
@@ -123,7 +123,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0011,
+    priority: 100000.0014,
     key: "topBarText",
     style: {
         color: "#fff",
@@ -133,7 +133,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0012,
+    priority: 100000.0015,
     key: "detail",
     style: {
         left: "10dp",
@@ -144,7 +144,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0013,
+    priority: 100000.0016,
     key: "tourDescription",
     style: {
         top: 0,
@@ -153,7 +153,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0014,
+    priority: 100000.0017,
     key: "description",
     style: {
         left: "0",
@@ -162,7 +162,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.002,
+    priority: 100000.0023,
     key: "imgColection",
     style: {
         width: Ti.UI.FILL,
@@ -176,7 +176,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0021,
+    priority: 100000.0024,
     key: "imgContent",
     style: {
         top: "5dp",
@@ -188,7 +188,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0022,
+    priority: 100000.0025,
     key: "link",
     style: {
         width: Ti.UI.FILL,
@@ -196,7 +196,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0025,
+    priority: 100000.0028,
     key: "tabLink",
     style: {
         top: "10dp"

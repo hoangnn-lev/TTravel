@@ -1,0 +1,14 @@
+"#topBar":{
+	width:Ti.UI.FILL,
+	height:Ti.UI.FILL,,
+	backgroundColor:Ti.API.MAIN_COLOR,
+	height:'50dp',
+	top:0
+},
+"#topBarText":{
+	color:'#fff',
+	font:{
+		fontSize:'17dp',
+	},
+	left:'60dp'
+}

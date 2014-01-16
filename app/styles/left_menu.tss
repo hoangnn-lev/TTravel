@@ -1,0 +1,53 @@
+"#leftMenu":{
+	//backgroundImage:'/menu/left_menu/main_left_menu.png',
+	backgroundColor:'#212529',
+	width:'80%',
+	left:'-80%',
+	height:Ti.UI.FILL,
+	zIndex:3,
+	left:'0',
+	backgroundRepeat:true
+},
+".leftMenuHeader":{
+	top:0,
+	height:'220dp',
+	width:Ti.UI.FILL,
+	//backgroundImage:'/menu/left_menu/item_left_menu.png',
+	backgroundColor:'#272c30',
+	backgroundRepeat:true
+},
+".leftMenuAvarta":{
+	width:'120dp',
+	height:'120dp',
+	backgroundColor:'#3d4349',
+	borderRadius:'120',
+	border:Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	borderColor:'#3d4349',
+	top:'20dp',
+	zIndex:4
+},
+".leftMenuImgAvarta":{
+	width:"100dp",
+	height:"100dp", 
+	top:"10dp",
+	borderRadius:'100',
+	border:Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+},
+".leftMenuName":{
+	color:'#fff',
+	font:{
+		fontSize:'24dp'
+	},
+	top:'150dp'
+},
+".leftMenuProfile":{
+	color:'#737374',
+	font:{
+		fontSize:'14dp'
+	},
+	top:'180dp'
+},
+"TableViewRow":{
+	width:Ti.UI.FILL,
+	height:'50dp'
+}

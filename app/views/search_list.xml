@@ -11,7 +11,7 @@
 			</View>
 			<Label class="line"/>
 			<View>
-				<TableView id="list_tours"/>
+				<TableView separatorColor="#eaeaea"  id="list_tours"/>
 			</View>
 		</View>
 		<Require type="view" src="bar_menu"/>

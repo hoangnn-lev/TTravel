@@ -5,16 +5,16 @@ var menu = [{
 	'v' : 'search'
 }, {
 	'img' : '/menu/favourite.png',
-	'v' : ''
+	'v' : 'favourite'
 }, {
-	'img' : '/menu/home.png',
+	'img' : '/menu/home-active.png',
 	'v' : 'home'
 }, {
 	'img' : '/menu/history.png',
-	'v' : ''
+	'v' : 'history'
 }, {
 	'img' : '/menu/news.png',
-	'v' : ''
+	'v' : 'news'
 }];
 
 for (var i = 0, n = menu.length; i < n; i++) {
@@ -23,19 +23,19 @@ for (var i = 0, n = menu.length; i < n; i++) {
 
 	var view = Ti.UI.createView({
 		width : menuItemWidth + 'dp',
-		height : '40dp',
-		left : i * menuItemWidth + 'dp'
+		height : '50dp',
+		left : i * menuItemWidth + 'dp',
 	});
+	
 	var button = Ti.UI.createImageView({
 		image : menu[i].img,
 		height : '30dp',
 		width : '30dp',
 		v : menu[i].v,
-		opacity : .5,
 		zIndex : 2
 	});
 	button.addEventListener('click', function(e) {
-		this.setOpacity(1);
+		//this.setOpacity(1);
 		if (e.source.v)
 			openView(e.source.v);
 	});

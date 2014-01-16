@@ -40,7 +40,17 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.004,
+    priority: 100000.0005,
+    key: "app",
+    style: {
+        layout: "vertical",
+        width: Ti.UI.FILL,
+        height: Ti.UI.FILL,
+        bottom: "50dp"
+    }
+}, {
+    isId: true,
+    priority: 100000.0057,
     key: "topBar",
     style: {
         width: Ti.UI.FILL,
@@ -50,7 +60,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0041,
+    priority: 100000.0058,
     key: "topBarText",
     style: {
         color: "#fff",
@@ -59,15 +69,5 @@ module.exports = [ {
         font: {
             fontSize: "20dp"
         }
-    }
-}, {
-    isId: true,
-    priority: 100000.0042,
-    key: "app",
-    style: {
-        layout: "vertical",
-        width: Ti.UI.FILL,
-        height: Ti.UI.FILL,
-        bottom: "60dp"
     }
 } ];

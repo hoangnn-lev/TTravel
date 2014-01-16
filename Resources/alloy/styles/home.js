@@ -40,7 +40,17 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0027,
+    priority: 100000.0005,
+    key: "app",
+    style: {
+        layout: "vertical",
+        width: Ti.UI.FILL,
+        height: Ti.UI.FILL,
+        bottom: "50dp"
+    }
+}, {
+    isId: true,
+    priority: 100000.0036,
     key: "banner",
     style: {
         top: 0,
@@ -48,7 +58,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0028,
+    priority: 100000.0037,
     key: "search",
     style: {
         backgroundColor: Ti.API.MAIN_COLOR,
@@ -58,7 +68,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0029,
+    priority: 100000.0038,
     key: "searchIcon",
     style: {
         border: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
@@ -70,7 +80,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.003,
+    priority: 100000.0039,
     key: "searchBar",
     style: {
         backgroundColor: "#fff",
@@ -88,7 +98,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0031,
+    priority: 100000.004,
     key: "searchButton",
     style: {
         height: "40dp",
@@ -102,15 +112,5 @@ module.exports = [ {
             fontWeigth: "bold",
             fontSize: "17dp"
         }
-    }
-}, {
-    isId: true,
-    priority: 100000.0032,
-    key: "app",
-    style: {
-        layout: "vertical",
-        width: Ti.UI.FILL,
-        height: Ti.UI.FILL,
-        bottom: "60dp"
     }
 } ];

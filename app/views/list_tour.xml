@@ -10,7 +10,7 @@
 				<ImageView top="0" image="/ads.jpg" width="Ti.UI.FILL"/>
 			</View>
 			<View>
-				<TableView id="list_tours"/>
+				<TableView separatorColor="#eaeaea"  id="list_tours"/>
 			</View>
 		</View>
 		<Require type="view" src="bar_menu"/>

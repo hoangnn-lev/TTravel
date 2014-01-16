@@ -33,7 +33,7 @@ function Controller() {
         layout: "vertical",
         width: Ti.UI.FILL,
         height: Ti.UI.FILL,
-        bottom: "60dp",
+        bottom: "50dp",
         id: "app"
     });
     $.__views.detail_tour.add($.__views.app);
@@ -45,23 +45,23 @@ function Controller() {
         id: "topBar"
     });
     $.__views.app.add($.__views.topBar);
-    $.__views.__alloyId0 = Ti.UI.createImageView({
+    $.__views.__alloyId3 = Ti.UI.createImageView({
         height: "30dp",
         width: "12dp",
         image: "/icon/Previous@2x.png",
         left: "10dp",
-        id: "__alloyId0"
+        id: "__alloyId3"
     });
-    $.__views.topBar.add($.__views.__alloyId0);
-    back ? $.__views.__alloyId0.addEventListener("click", back) : __defers["$.__views.__alloyId0!click!back"] = true;
-    $.__views.__alloyId1 = Ti.UI.createImageView({
+    $.__views.topBar.add($.__views.__alloyId3);
+    back ? $.__views.__alloyId3.addEventListener("click", back) : __defers["$.__views.__alloyId3!click!back"] = true;
+    $.__views.__alloyId4 = Ti.UI.createImageView({
         height: "20dp",
         width: "20dp",
         image: "/icon/p.png",
         left: "35dp",
-        id: "__alloyId1"
+        id: "__alloyId4"
     });
-    $.__views.topBar.add($.__views.__alloyId1);
+    $.__views.topBar.add($.__views.__alloyId4);
     $.__views.topBarText = Ti.UI.createLabel({
         font: {
             fontSize: "17dp"
@@ -95,33 +95,33 @@ function Controller() {
         id: "description"
     });
     $.__views.tourDescription.add($.__views.description);
-    $.__views.__alloyId2 = Ti.UI.createImageView({
+    $.__views.__alloyId5 = Ti.UI.createImageView({
         image: "/icon/rating.png",
         top: "0",
         left: "0",
         width: "109dp",
         height: "21dp",
-        id: "__alloyId2"
+        id: "__alloyId5"
     });
-    $.__views.description.add($.__views.__alloyId2);
-    $.__views.__alloyId3 = Ti.UI.createImageView({
+    $.__views.description.add($.__views.__alloyId5);
+    $.__views.__alloyId6 = Ti.UI.createImageView({
         image: "/icon/booking.png",
         top: "0",
         right: "0",
         width: "132dp",
         height: "30dp",
-        id: "__alloyId3"
+        id: "__alloyId6"
     });
-    $.__views.description.add($.__views.__alloyId3);
-    booking ? $.__views.__alloyId3.addEventListener("click", booking) : __defers["$.__views.__alloyId3!click!booking"] = true;
-    $.__views.__alloyId4 = Ti.UI.createView({
+    $.__views.description.add($.__views.__alloyId6);
+    booking ? $.__views.__alloyId6.addEventListener("click", booking) : __defers["$.__views.__alloyId6!click!booking"] = true;
+    $.__views.__alloyId7 = Ti.UI.createView({
         width: Ti.UI.FILL,
         height: Ti.UI.SIZE,
         top: "23dp",
-        id: "__alloyId4"
+        id: "__alloyId7"
     });
-    $.__views.description.add($.__views.__alloyId4);
-    $.__views.__alloyId5 = Ti.UI.createLabel({
+    $.__views.description.add($.__views.__alloyId7);
+    $.__views.__alloyId8 = Ti.UI.createLabel({
         font: {
             fontSize: "18dp"
         },
@@ -129,43 +129,18 @@ function Controller() {
         left: "0",
         top: "0",
         text: "1.500.00 VNĐ",
-        id: "__alloyId5"
-    });
-    $.__views.__alloyId4.add($.__views.__alloyId5);
-    $.__views.__alloyId6 = Ti.UI.createView({
-        width: Ti.UI.FILL,
-        height: Ti.UI.SIZE,
-        top: "50dp",
-        id: "__alloyId6"
-    });
-    $.__views.description.add($.__views.__alloyId6);
-    $.__views.__alloyId7 = Ti.UI.createImageView({
-        image: "/icon/flag.png",
-        left: "0",
-        height: "15dp",
-        width: "15dp",
-        id: "__alloyId7"
-    });
-    $.__views.__alloyId6.add($.__views.__alloyId7);
-    $.__views.__alloyId8 = Ti.UI.createLabel({
-        font: {
-            fontSize: "15dp"
-        },
-        color: "#737373",
-        left: "25dp",
-        text: "Điểm xuất phát: TP. Hồ Chí Minh",
         id: "__alloyId8"
     });
-    $.__views.__alloyId6.add($.__views.__alloyId8);
+    $.__views.__alloyId7.add($.__views.__alloyId8);
     $.__views.__alloyId9 = Ti.UI.createView({
         width: Ti.UI.FILL,
         height: Ti.UI.SIZE,
-        top: "73dp",
+        top: "50dp",
         id: "__alloyId9"
     });
     $.__views.description.add($.__views.__alloyId9);
     $.__views.__alloyId10 = Ti.UI.createImageView({
-        image: "/icon/clock.png",
+        image: "/icon/flag.png",
         left: "0",
         height: "15dp",
         width: "15dp",
@@ -178,19 +153,19 @@ function Controller() {
         },
         color: "#737373",
         left: "25dp",
-        text: "Thời gian: 3 ngày 2 đêm",
+        text: "Điểm xuất phát: TP. Hồ Chí Minh",
         id: "__alloyId11"
     });
     $.__views.__alloyId9.add($.__views.__alloyId11);
     $.__views.__alloyId12 = Ti.UI.createView({
         width: Ti.UI.FILL,
         height: Ti.UI.SIZE,
-        top: "96dp",
+        top: "73dp",
         id: "__alloyId12"
     });
     $.__views.description.add($.__views.__alloyId12);
     $.__views.__alloyId13 = Ti.UI.createImageView({
-        image: "/icon/bus.png",
+        image: "/icon/clock.png",
         left: "0",
         height: "15dp",
         width: "15dp",
@@ -203,10 +178,35 @@ function Controller() {
         },
         color: "#737373",
         left: "25dp",
-        text: "Ngày khởi hành: Theo yêu cầu",
+        text: "Thời gian: 3 ngày 2 đêm",
         id: "__alloyId14"
     });
     $.__views.__alloyId12.add($.__views.__alloyId14);
+    $.__views.__alloyId15 = Ti.UI.createView({
+        width: Ti.UI.FILL,
+        height: Ti.UI.SIZE,
+        top: "96dp",
+        id: "__alloyId15"
+    });
+    $.__views.description.add($.__views.__alloyId15);
+    $.__views.__alloyId16 = Ti.UI.createImageView({
+        image: "/icon/bus.png",
+        left: "0",
+        height: "15dp",
+        width: "15dp",
+        id: "__alloyId16"
+    });
+    $.__views.__alloyId15.add($.__views.__alloyId16);
+    $.__views.__alloyId17 = Ti.UI.createLabel({
+        font: {
+            fontSize: "15dp"
+        },
+        color: "#737373",
+        left: "25dp",
+        text: "Ngày khởi hành: Theo yêu cầu",
+        id: "__alloyId17"
+    });
+    $.__views.__alloyId15.add($.__views.__alloyId17);
     $.__views.tabLink = Ti.UI.createView({
         top: "10dp",
         layout: "vertical",
@@ -219,25 +219,25 @@ function Controller() {
         id: "link"
     });
     $.__views.tabLink.add($.__views.link);
-    $.__views.__alloyId15 = Ti.UI.createImageView({
+    $.__views.__alloyId18 = Ti.UI.createImageView({
         width: "15dp",
         height: "15dp",
         left: 0,
         image: "/icon/remove.png",
-        id: "__alloyId15"
+        id: "__alloyId18"
     });
-    $.__views.link.add($.__views.__alloyId15);
-    $.__views.__alloyId16 = Ti.UI.createLabel({
+    $.__views.link.add($.__views.__alloyId18);
+    $.__views.__alloyId19 = Ti.UI.createLabel({
         font: {
             fontSize: "15dp"
         },
         left: "20dp",
         color: "#8d8d8d",
         text: "Hình ảnh",
-        id: "__alloyId16"
+        id: "__alloyId19"
     });
-    $.__views.link.add($.__views.__alloyId16);
-    $.__views.__alloyId17 = Ti.UI.createLabel({
+    $.__views.link.add($.__views.__alloyId19);
+    $.__views.__alloyId20 = Ti.UI.createLabel({
         font: {
             fontSize: "15dp"
         },
@@ -246,9 +246,9 @@ function Controller() {
         backgroundColor: "#dfdfdf",
         top: "2dp",
         bottom: "2dp",
-        id: "__alloyId17"
+        id: "__alloyId20"
     });
-    $.__views.tabLink.add($.__views.__alloyId17);
+    $.__views.tabLink.add($.__views.__alloyId20);
     $.__views.imgColection = Ti.UI.createView({
         width: Ti.UI.FILL,
         height: "160dp",
@@ -261,16 +261,16 @@ function Controller() {
         id: "imgColection"
     });
     $.__views.tabLink.add($.__views.imgColection);
-    $.__views.__alloyId18 = Ti.UI.createImageView({
+    $.__views.__alloyId21 = Ti.UI.createImageView({
         width: "22dp",
         zIndex: "2",
         left: "5dp",
         height: "40dp",
         image: "/icon/prev.png",
-        id: "__alloyId18"
+        id: "__alloyId21"
     });
-    $.__views.imgColection.add($.__views.__alloyId18);
-    prev ? $.__views.__alloyId18.addEventListener("click", prev) : __defers["$.__views.__alloyId18!click!prev"] = true;
+    $.__views.imgColection.add($.__views.__alloyId21);
+    prev ? $.__views.__alloyId21.addEventListener("click", prev) : __defers["$.__views.__alloyId21!click!prev"] = true;
     $.__views.imgContent = Ti.UI.createView({
         top: "5dp",
         bottom: "5dp",
@@ -283,59 +283,23 @@ function Controller() {
     });
     $.__views.imgColection.add($.__views.imgContent);
     imgClick ? $.__views.imgContent.addEventListener("click", imgClick) : __defers["$.__views.imgContent!click!imgClick"] = true;
-    $.__views.__alloyId19 = Ti.UI.createImageView({
+    $.__views.__alloyId22 = Ti.UI.createImageView({
         image: "/nha-trang-wall.jpg",
         height: "150dp",
         width: "330dp",
-        id: "__alloyId19"
+        id: "__alloyId22"
     });
-    $.__views.imgContent.add($.__views.__alloyId19);
-    $.__views.__alloyId20 = Ti.UI.createImageView({
+    $.__views.imgContent.add($.__views.__alloyId22);
+    $.__views.__alloyId23 = Ti.UI.createImageView({
         width: "22dp",
         zIndex: "2",
         right: "5dp",
         height: "40dp",
         image: "/icon/next.png",
-        id: "__alloyId20"
-    });
-    $.__views.imgColection.add($.__views.__alloyId20);
-    next ? $.__views.__alloyId20.addEventListener("click", next) : __defers["$.__views.__alloyId20!click!next"] = true;
-    $.__views.link = Ti.UI.createView({
-        width: Ti.UI.FILL,
-        height: "25dp",
-        id: "link"
-    });
-    $.__views.tabLink.add($.__views.link);
-    $.__views.__alloyId21 = Ti.UI.createImageView({
-        width: "15dp",
-        height: "15dp",
-        left: 0,
-        image: "/icon/add.png",
-        id: "__alloyId21"
-    });
-    $.__views.link.add($.__views.__alloyId21);
-    $.__views.__alloyId22 = Ti.UI.createLabel({
-        font: {
-            fontSize: "15dp"
-        },
-        left: "20dp",
-        color: "#8d8d8d",
-        text: "Chi tiết tour",
-        id: "__alloyId22"
-    });
-    $.__views.link.add($.__views.__alloyId22);
-    $.__views.__alloyId23 = Ti.UI.createLabel({
-        font: {
-            fontSize: "15dp"
-        },
-        width: Ti.UI.FILL,
-        height: "1sp",
-        backgroundColor: "#dfdfdf",
-        top: "2dp",
-        bottom: "2dp",
         id: "__alloyId23"
     });
-    $.__views.tabLink.add($.__views.__alloyId23);
+    $.__views.imgColection.add($.__views.__alloyId23);
+    next ? $.__views.__alloyId23.addEventListener("click", next) : __defers["$.__views.__alloyId23!click!next"] = true;
     $.__views.link = Ti.UI.createView({
         width: Ti.UI.FILL,
         height: "25dp",
@@ -356,7 +320,7 @@ function Controller() {
         },
         left: "20dp",
         color: "#8d8d8d",
-        text: "Chương trình tour",
+        text: "Chi tiết tour",
         id: "__alloyId25"
     });
     $.__views.link.add($.__views.__alloyId25);
@@ -392,7 +356,7 @@ function Controller() {
         },
         left: "20dp",
         color: "#8d8d8d",
-        text: "Điều kiện - Quy định",
+        text: "Chương trình tour",
         id: "__alloyId28"
     });
     $.__views.link.add($.__views.__alloyId28);
@@ -408,18 +372,54 @@ function Controller() {
         id: "__alloyId29"
     });
     $.__views.tabLink.add($.__views.__alloyId29);
-    $.__views.__alloyId30 = Alloy.createController("bar_menu", {
-        id: "__alloyId30",
+    $.__views.link = Ti.UI.createView({
+        width: Ti.UI.FILL,
+        height: "25dp",
+        id: "link"
+    });
+    $.__views.tabLink.add($.__views.link);
+    $.__views.__alloyId30 = Ti.UI.createImageView({
+        width: "15dp",
+        height: "15dp",
+        left: 0,
+        image: "/icon/add.png",
+        id: "__alloyId30"
+    });
+    $.__views.link.add($.__views.__alloyId30);
+    $.__views.__alloyId31 = Ti.UI.createLabel({
+        font: {
+            fontSize: "15dp"
+        },
+        left: "20dp",
+        color: "#8d8d8d",
+        text: "Điều kiện - Quy định",
+        id: "__alloyId31"
+    });
+    $.__views.link.add($.__views.__alloyId31);
+    $.__views.__alloyId32 = Ti.UI.createLabel({
+        font: {
+            fontSize: "15dp"
+        },
+        width: Ti.UI.FILL,
+        height: "1sp",
+        backgroundColor: "#dfdfdf",
+        top: "2dp",
+        bottom: "2dp",
+        id: "__alloyId32"
+    });
+    $.__views.tabLink.add($.__views.__alloyId32);
+    $.__views.__alloyId33 = Alloy.createController("bar_menu", {
+        id: "__alloyId33",
         __parentSymbol: $.__views.detail_tour
     });
-    $.__views.__alloyId30.setParent($.__views.detail_tour);
+    $.__views.__alloyId33.setParent($.__views.detail_tour);
     exports.destroy = function() {};
     _.extend($, $.__views);
-    __defers["$.__views.__alloyId0!click!back"] && $.__views.__alloyId0.addEventListener("click", back);
-    __defers["$.__views.__alloyId3!click!booking"] && $.__views.__alloyId3.addEventListener("click", booking);
-    __defers["$.__views.__alloyId18!click!prev"] && $.__views.__alloyId18.addEventListener("click", prev);
+    __defers["$.__views.__alloyId3!click!back"] && $.__views.__alloyId3.addEventListener("click", back);
+    __defers["$.__views.__alloyId6!click!booking"] && $.__views.__alloyId6.addEventListener("click", booking);
+    __defers["$.__views.__alloyId21!click!prev"] && $.__views.__alloyId21.addEventListener("click", prev);
     __defers["$.__views.imgContent!click!imgClick"] && $.__views.imgContent.addEventListener("click", imgClick);
-    __defers["$.__views.__alloyId20!click!next"] && $.__views.__alloyId20.addEventListener("click", next);
+    __defers["$.__views.__alloyId23!click!next"] && $.__views.__alloyId23.addEventListener("click", next);
     _.extend($, exports);
 }
 
