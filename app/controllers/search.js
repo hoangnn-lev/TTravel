@@ -1,5 +1,5 @@
 function search(e) {
-	Alloy.createController('search_list').getView().open();
+	openView('search_list');
 }
 
 function changeLocation(e) {

@@ -1,0 +1,78 @@
+"#avarta":{
+	width:Ti.UI.FILL,
+	height:'230dp',
+	top:0,
+	backgroundColor:'#dfdfdf'
+},
+"#content":{
+	layout:'vertical',
+	width:Ti.UI.FILL,
+	height:Ti.UI.FILL,
+},
+".uploadCircle":{
+	width:'40dp',
+	height:'40dp',
+	top:'20dp',
+	left:'20dp'
+},
+".name":{
+	font:{
+		fontSize:'18dp',
+	},
+	bottom:'40dp',
+	left:'20dp',
+	color:'#fff',
+	top:'10dp'
+},
+".address":{
+	font:{
+		fontSize:'14dp'
+	},
+	bottom:'20dp',
+	left:'20dp',
+	color:'#fff'
+},
+".updateProfile":{
+	
+	height:Ti.UI.SIZE,
+	width:Ti.UI.FILL,
+	font:{
+		fontSize:'14dp'
+	},
+	top:0
+},
+".aboutView":{
+	width:Ti.UI.FILL,
+	height:Ti.UI.SIZE,
+},
+".about":{
+	top:'10dp',
+	bottom:'10dp',
+	left:'20dp',
+	font:{
+		fontSize:'14dp'
+	},
+	color:'#737373',
+	width:Ti.UI.FILL,
+	height:Ti.UI.SIZE
+},
+".favourite":{
+	width:'30dp',
+	height:'26dp',
+	right:'55dp',
+	bottom:'20dp'
+},
+".favouriteCount":{
+	right:'35dp',
+	bottom:'20dp',
+	color:'#fff',
+	font:{
+		fontSize:'22dp'
+	}
+},
+".info":{
+	width:Ti.UI.FILL,
+	height:Ti.UI.SIZE,
+	backgroundImage:'/icon/transparent.png',
+	bottom:0
+}

@@ -60,11 +60,23 @@ function Controller() {
         id: "topBarText"
     });
     $.__views.topBar.add($.__views.topBarText);
-    $.__views.__alloyId2 = Alloy.createController("bar_menu", {
-        id: "__alloyId2",
+    $.__views.__alloyId2 = Ti.UI.createView({
+        id: "__alloyId2"
+    });
+    $.__views.app.add($.__views.__alloyId2);
+    $.__views.__alloyId3 = Ti.UI.createLabel({
+        font: {
+            fontSize: "15dp"
+        },
+        text: "Chi tiết tin tức",
+        id: "__alloyId3"
+    });
+    $.__views.__alloyId2.add($.__views.__alloyId3);
+    $.__views.__alloyId4 = Alloy.createController("bar_menu", {
+        id: "__alloyId4",
         __parentSymbol: $.__views.detail_news
     });
-    $.__views.__alloyId2.setParent($.__views.detail_news);
+    $.__views.__alloyId4.setParent($.__views.detail_news);
     exports.destroy = function() {};
     _.extend($, $.__views);
     __defers["$.__views.__alloyId0!click!back"] && $.__views.__alloyId0.addEventListener("click", back);

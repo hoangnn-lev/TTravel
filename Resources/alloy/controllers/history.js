@@ -93,15 +93,15 @@ function Controller() {
         id: "topBar"
     });
     $.__views.app.add($.__views.topBar);
-    $.__views.__alloyId38 = Ti.UI.createImageView({
+    $.__views.__alloyId41 = Ti.UI.createImageView({
         height: "30dp",
         width: "12dp",
         image: "/icon/Previous@2x.png",
         left: "10dp",
-        id: "__alloyId38"
+        id: "__alloyId41"
     });
-    $.__views.topBar.add($.__views.__alloyId38);
-    back ? $.__views.__alloyId38.addEventListener("click", back) : __defers["$.__views.__alloyId38!click!back"] = true;
+    $.__views.topBar.add($.__views.__alloyId41);
+    back ? $.__views.__alloyId41.addEventListener("click", back) : __defers["$.__views.__alloyId41!click!back"] = true;
     $.__views.topBarText = Ti.UI.createLabel({
         font: {
             fontSize: "20dp"
@@ -113,38 +113,33 @@ function Controller() {
         id: "topBarText"
     });
     $.__views.topBar.add($.__views.topBarText);
-    $.__views.__alloyId39 = Ti.UI.createView({
-        id: "__alloyId39"
+    $.__views.__alloyId42 = Ti.UI.createView({
+        id: "__alloyId42"
     });
-    $.__views.app.add($.__views.__alloyId39);
+    $.__views.app.add($.__views.__alloyId42);
     $.__views.list_tours = Ti.UI.createTableView({
         separatorColor: "#eaeaea",
         id: "list_tours"
     });
-    $.__views.__alloyId39.add($.__views.list_tours);
-    $.__views.__alloyId40 = Alloy.createController("bar_menu", {
-        id: "__alloyId40",
+    $.__views.__alloyId42.add($.__views.list_tours);
+    $.__views.__alloyId43 = Alloy.createController("bar_menu", {
+        id: "__alloyId43",
         __parentSymbol: $.__views.history
     });
-    $.__views.__alloyId40.setParent($.__views.history);
+    $.__views.__alloyId43.setParent($.__views.history);
     exports.destroy = function() {};
     _.extend($, $.__views);
     var list = [];
-    list.push(create_list("/city/ha-noi.jpg", "Du lịch nha trang vinperland 3 ngày 2 đêm", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
-    list.push(create_list("/city/ha-noi.jpg", "Du lịch nha trang", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
-    list.push(create_list("/city/ha-noi.jpg", "Du lịch nha trang", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
-    list.push(create_list("/city/ha-noi.jpg", "Du lịch nha trang", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
-    list.push(create_list("/city/ha-noi.jpg", "Du lịch nha trang", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
-    list.push(create_list("/city/ha-noi.jpg", "Du lịch nha trang", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
-    list.push(create_list("/city/ha-noi.jpg", "Du lịch nha trang", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
-    list.push(create_list("/city/ha-noi.jpg", "Du lịch nha trang", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
-    list.push(create_list("/city/ha-noi.jpg", "Du lịch nha trang", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
-    list.push(create_list("/city/ha-noi.jpg", "Du lịch nha trang", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
+    list.push(create_list("/city/nha-trang.jpg", "Du lịch nha trang vinperland 3 ngày 2 đêm", "3 ngày 2 đêm", "25/03/2014", "1.820.000 VNĐ"));
+    list.push(create_list("/city/mien-tay.jpg", "Miền tây chợ trên sông", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
+    list.push(create_list("/city/hue.jpg", "Huế mộng mơ", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
+    list.push(create_list("/city/hcm.jpg", "Đầm sen TP Hồ Chí minh", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
+    list.push(create_list("/city/ha-noi.jpg", "Thăm lăng bác Hà Nội", "3 ngày 2 đêm", "17/05/2014", "1.820.000 VNĐ"));
     $.list_tours.setData(list);
     $.list_tours.addEventListener("click", function() {
-        Alloy.createController("detail_tour").getView().open();
+        openView("detail_tour");
     });
-    __defers["$.__views.__alloyId38!click!back"] && $.__views.__alloyId38.addEventListener("click", back);
+    __defers["$.__views.__alloyId41!click!back"] && $.__views.__alloyId41.addEventListener("click", back);
     _.extend($, exports);
 }
 

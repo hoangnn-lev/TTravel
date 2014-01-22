@@ -1,5 +1,7 @@
 var list = [];
-var view_list_tour;
+
+var deviceWidth = Ti.Platform.displayCaps.platformWidth / (Ti.Platform.displayCaps.dpi / 160);
+$.main.setWidth(deviceWidth+'dp');
 list.push(create_list('/city/ha-noi.jpg', 'Hà Nội', 8));
 list.push(create_list('/city/nha-trang.jpg', 'Nha Trang', 80));
 list.push(create_list('/city/hcm.jpg', 'TP.HCM', 122));
@@ -15,13 +17,11 @@ list.push(create_list('/city/mien-tay.jpg', 'Miền Tây', 18));
 $.list_location.setData(list);
 
 $.list_location.addEventListener('click', function(e) {
-	
-	if(!view_list_tour) view_list_tour = Alloy.createController('list_tour').getView(); 
-	view_list_tour.open();
+	openView('list_tour');
 });
 
 $.searchButton.addEventListener('click', function(e) {
-	Alloy.createController('search').getView().open();
+	openView('search');
 });
 
 /*
@@ -89,3 +89,26 @@ function create_list(img, title, num) {
 	return row;
 }
 
+var left, app_left, isOpened = false;
+
+function open_close_slide_bar() {
+	if (isOpened) {
+		left = '-80%';
+		isOpened = false;
+		app_left = 0;
+	} else {
+		left = '0';
+		isOpened = true;
+		app_left = '80%';
+	}
+	$.main.animate({
+		left : app_left,
+		duration : 200,
+		curve : Ti.UI.ANIMATION_CURVE_EASE_IN_OUT
+	});
+	$.left_menu.getView('leftMenu').animate({
+		left : left,
+		duration : 200,
+		curve : Ti.UI.ANIMATION_CURVE_EASE_IN_OUT
+	});
+}

@@ -1,22 +1,13 @@
 var list = [];
 
-list.push(create_list('/city/ha-noi.jpg', 'Du lịch nha trang vinperland 3 ngày 2 đêm', '3 ngày 2 đêm', 'Theo yêu cầu', '1.820.000 VNĐ'));
-list.push(create_list('/city/ha-noi.jpg', 'Du lịch nha trang', '3 ngày 2 đêm', 'Theo yêu cầu', '1.820.000 VNĐ'));
-list.push(create_list('/city/ha-noi.jpg', 'Du lịch nha trang', '3 ngày 2 đêm', 'Theo yêu cầu', '1.820.000 VNĐ'));
-list.push(create_list('/city/ha-noi.jpg', 'Du lịch nha trang', '3 ngày 2 đêm', 'Theo yêu cầu', '1.820.000 VNĐ'));
-list.push(create_list('/city/ha-noi.jpg', 'Du lịch nha trang', '3 ngày 2 đêm', 'Theo yêu cầu', '1.820.000 VNĐ'));
-list.push(create_list('/city/ha-noi.jpg', 'Du lịch nha trang', '3 ngày 2 đêm', 'Theo yêu cầu', '1.820.000 VNĐ'));
-list.push(create_list('/city/ha-noi.jpg', 'Du lịch nha trang', '3 ngày 2 đêm', 'Theo yêu cầu', '1.820.000 VNĐ'));
-list.push(create_list('/city/ha-noi.jpg', 'Du lịch nha trang', '3 ngày 2 đêm', 'Theo yêu cầu', '1.820.000 VNĐ'));
-list.push(create_list('/city/ha-noi.jpg', 'Du lịch nha trang', '3 ngày 2 đêm', 'Theo yêu cầu', '1.820.000 VNĐ'));
-list.push(create_list('/city/ha-noi.jpg', 'Du lịch nha trang', '3 ngày 2 đêm', 'Theo yêu cầu', '1.820.000 VNĐ'));
+list.push(create_list('/city/hue.jpg', 'Huế mộng mơ', '3 ngày 2 đêm', 'Theo yêu cầu', '1.820.000 VNĐ'));
+list.push(create_list('/city/nha-trang.jpg', 'Du lịch nha trang vinperland 3 ngày 2 đêm', '3 ngày 2 đêm', '25/03/2014', '1.820.000 VNĐ'));
+list.push(create_list('/city/mien-tay.jpg', 'Miền tây chợ trên sông', '3 ngày 2 đêm', 'Theo yêu cầu', '1.820.000 VNĐ'));
 
 $.list_tours.setData(list);
 
 $.list_tours.addEventListener('click', function(e) {
-
- 	Alloy.createController('detail_tour').getView().open(); 
-
+	openView('detail_tour');
 });
 
 /*
@@ -56,7 +47,7 @@ function create_list(img, title, day, departure, price) {
 		color : '#575757',
 		left : '73dp',
 		top : '7dp',
-		height:'25dp'
+		height : '25dp'
 	}));
 
 	row.add(Ti.UI.createLabel({
@@ -92,6 +83,7 @@ function create_list(img, title, day, departure, price) {
 	return row;
 }
 
-function back(e){
+function back(e) {
 	openView('home');
 }
+

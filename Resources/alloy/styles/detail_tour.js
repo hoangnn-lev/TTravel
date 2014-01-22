@@ -82,7 +82,8 @@ module.exports = [ {
     key: "itemDescription",
     style: {
         width: Ti.UI.FILL,
-        height: Ti.UI.SIZE
+        height: Ti.UI.SIZE,
+        top: "5dp"
     }
 }, {
     isClass: true,

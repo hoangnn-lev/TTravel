@@ -121,7 +121,7 @@ module.exports = [ {
     style: {
         backgroundColor: "#212529",
         width: "80%",
-        left: "0",
+        left: "-80%",
         height: Ti.UI.FILL,
         zIndex: 3,
         backgroundRepeat: true

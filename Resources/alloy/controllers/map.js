@@ -13,12 +13,12 @@ function Controller() {
         id: "map"
     });
     $.__views.map && $.addTopLevelView($.__views.map);
-    $.__views.__alloyId84 = Ti.UI.createView({
+    $.__views.__alloyId87 = Ti.UI.createView({
         backgroundImage: "/map.jpg",
         bottom: "50dp",
-        id: "__alloyId84"
+        id: "__alloyId87"
     });
-    $.__views.map.add($.__views.__alloyId84);
+    $.__views.map.add($.__views.__alloyId87);
     $.__views.hanoi = Ti.UI.createLabel({
         font: {
             fontSize: "14dp"
@@ -29,12 +29,12 @@ function Controller() {
         text: "Hà Nội (8)",
         id: "hanoi"
     });
-    $.__views.__alloyId84.add($.__views.hanoi);
-    $.__views.__alloyId85 = Alloy.createController("bar_menu", {
-        id: "__alloyId85",
+    $.__views.__alloyId87.add($.__views.hanoi);
+    $.__views.__alloyId88 = Alloy.createController("bar_menu", {
+        id: "__alloyId88",
         __parentSymbol: $.__views.map
     });
-    $.__views.__alloyId85.setParent($.__views.map);
+    $.__views.__alloyId88.setParent($.__views.map);
     exports.destroy = function() {};
     _.extend($, $.__views);
     _.extend($, exports);

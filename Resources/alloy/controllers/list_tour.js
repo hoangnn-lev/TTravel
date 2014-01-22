@@ -1,5 +1,5 @@
 function Controller() {
-    function create_list(img, title, day, departure, price) {
+    function create_list(img, title, day, departure, price, promotion) {
         var row = Ti.UI.createTableViewRow({
             font: {
                 fontSize: "15dp"
@@ -19,6 +19,14 @@ function Controller() {
             bottom: "5dp",
             borderColor: "#fff",
             borderRadius: "60"
+        }));
+        promotion && row.add(Ti.UI.createImageView({
+            image: "/icon/sale.png",
+            width: "60dp",
+            height: "60dp",
+            left: "7dp",
+            top: "0",
+            left: "0"
         }));
         row.add(Ti.UI.createLabel({
             text: title,
@@ -93,15 +101,15 @@ function Controller() {
         id: "topBar"
     });
     $.__views.app.add($.__views.topBar);
-    $.__views.__alloyId78 = Ti.UI.createImageView({
+    $.__views.__alloyId81 = Ti.UI.createImageView({
         height: "30dp",
         width: "12dp",
         image: "/icon/Previous@2x.png",
         left: "10dp",
-        id: "__alloyId78"
+        id: "__alloyId81"
     });
-    $.__views.topBar.add($.__views.__alloyId78);
-    back ? $.__views.__alloyId78.addEventListener("click", back) : __defers["$.__views.__alloyId78!click!back"] = true;
+    $.__views.topBar.add($.__views.__alloyId81);
+    back ? $.__views.__alloyId81.addEventListener("click", back) : __defers["$.__views.__alloyId81!click!back"] = true;
     $.__views.topBarText = Ti.UI.createLabel({
         font: {
             fontSize: "20dp"
@@ -113,58 +121,58 @@ function Controller() {
         id: "topBarText"
     });
     $.__views.topBar.add($.__views.topBarText);
-    $.__views.__alloyId79 = Ti.UI.createImageView({
+    $.__views.__alloyId82 = Ti.UI.createImageView({
         height: "30dp",
         width: "30dp",
         image: "/icon/New@2x.png",
         right: "10dp",
-        id: "__alloyId79"
+        id: "__alloyId82"
     });
-    $.__views.topBar.add($.__views.__alloyId79);
-    $.__views.__alloyId80 = Ti.UI.createView({
+    $.__views.topBar.add($.__views.__alloyId82);
+    $.__views.__alloyId83 = Ti.UI.createView({
         height: Ti.UI.SIZE,
-        id: "__alloyId80"
+        id: "__alloyId83"
     });
-    $.__views.app.add($.__views.__alloyId80);
-    $.__views.__alloyId81 = Ti.UI.createImageView({
+    $.__views.app.add($.__views.__alloyId83);
+    $.__views.__alloyId84 = Ti.UI.createImageView({
         top: "0",
         image: "/ads.jpg",
         width: Ti.UI.FILL,
-        id: "__alloyId81"
+        id: "__alloyId84"
     });
-    $.__views.__alloyId80.add($.__views.__alloyId81);
-    $.__views.__alloyId82 = Ti.UI.createView({
-        id: "__alloyId82"
+    $.__views.__alloyId83.add($.__views.__alloyId84);
+    $.__views.__alloyId85 = Ti.UI.createView({
+        id: "__alloyId85"
     });
-    $.__views.app.add($.__views.__alloyId82);
+    $.__views.app.add($.__views.__alloyId85);
     $.__views.list_tours = Ti.UI.createTableView({
         separatorColor: "#eaeaea",
         id: "list_tours"
     });
-    $.__views.__alloyId82.add($.__views.list_tours);
-    $.__views.__alloyId83 = Alloy.createController("bar_menu", {
-        id: "__alloyId83",
+    $.__views.__alloyId85.add($.__views.list_tours);
+    $.__views.__alloyId86 = Alloy.createController("bar_menu", {
+        id: "__alloyId86",
         __parentSymbol: $.__views.list_tour
     });
-    $.__views.__alloyId83.setParent($.__views.list_tour);
+    $.__views.__alloyId86.setParent($.__views.list_tour);
     exports.destroy = function() {};
     _.extend($, $.__views);
     var list = [];
-    list.push(create_list("/city/ha-noi.jpg", "Du lịch nha trang vinperland 3 ngày 2 đêm", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
-    list.push(create_list("/city/ha-noi.jpg", "Du lịch nha trang", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
-    list.push(create_list("/city/ha-noi.jpg", "Du lịch nha trang", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
-    list.push(create_list("/city/ha-noi.jpg", "Du lịch nha trang", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
-    list.push(create_list("/city/ha-noi.jpg", "Du lịch nha trang", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
-    list.push(create_list("/city/ha-noi.jpg", "Du lịch nha trang", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
-    list.push(create_list("/city/ha-noi.jpg", "Du lịch nha trang", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
-    list.push(create_list("/city/ha-noi.jpg", "Du lịch nha trang", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
-    list.push(create_list("/city/ha-noi.jpg", "Du lịch nha trang", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
-    list.push(create_list("/city/ha-noi.jpg", "Du lịch nha trang", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
+    list.push(create_list("/city/nha-trang.jpg", "Du lịch nha trang vinperland 3 ngày 2 đêm", "3 ngày 2 đêm", "25/03/2014", "1.820.000 VNĐ"));
+    list.push(create_list("/city/mien-tay.jpg", "Miền tây chợ trên sông", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
+    list.push(create_list("/city/hue.jpg", "Huế mộng mơ", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ", 1));
+    list.push(create_list("/city/hcm.jpg", "Đầm sen TP Hồ Chí minh", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
+    list.push(create_list("/city/ha-noi.jpg", "Thăm lăng bác Hà Nội", "3 ngày 2 đêm", "17/05/2014", "1.820.000 VNĐ", 1));
+    list.push(create_list("/city/nha-trang.jpg", "Du lịch nha trang vinperland 3 ngày 2 đêm", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
+    list.push(create_list("/city/mien-tay.jpg", "Miền tây chợ trên sông", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ", 1));
+    list.push(create_list("/city/hue.jpg", "Huế mộng mơ", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
+    list.push(create_list("/city/hcm.jpg", "Đầm sen TP Hồ Chí minh", "3 ngày 2 đêm", "11/05/2014", "1.820.000 VNĐ", 1));
+    list.push(create_list("/city/ha-noi.jpg", "Thăm lăng bác Hà Nội", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
     $.list_tours.setData(list);
     $.list_tours.addEventListener("click", function() {
-        Alloy.createController("detail_tour").getView().open();
+        openView("detail_tour");
     });
-    __defers["$.__views.__alloyId78!click!back"] && $.__views.__alloyId78.addEventListener("click", back);
+    __defers["$.__views.__alloyId81!click!back"] && $.__views.__alloyId81.addEventListener("click", back);
     _.extend($, exports);
 }
 

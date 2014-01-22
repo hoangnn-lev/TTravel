@@ -14,9 +14,7 @@ list.push(create_list('promotion', '/news/hoa-hau.jpg', '20 Hoa hậu đẹp nh�
 $.list_news.setData(list);
 
 $.list_news.addEventListener('click', function(e) {
-
-	Alloy.createController('detail_news').getView().open();
-
+	openView('detail_news');
 });
 
 /*
@@ -107,6 +105,6 @@ function back(e) {
 	openView('home');
 }
 
-function filter(e){
+function filter(e) {
 	alert('filter news');
 }

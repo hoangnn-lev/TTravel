@@ -5,8 +5,7 @@ $.index.open();
  * action
  * */
 function loginByFacebook() {
-	var home = Alloy.createController('profile').getView();
-	home.open();
+	openView('home');
 }
 
 /*
@@ -14,8 +13,7 @@ function loginByFacebook() {
  * action
  * */
 function loginByTwitter() {
-	var home = Alloy.createController('profile').getView();
-	home.open();
+	openView('home');
 }
 
 function showDialog(){

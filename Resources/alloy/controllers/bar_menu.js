@@ -40,6 +40,21 @@ function Controller() {
             height: "50dp",
             left: i * menuItemWidth + "dp"
         });
+        if (4 == i) {
+            var notice = Ti.UI.createLabel({
+                backgroundColor: "#ff7e25",
+                color: "#fff",
+                text: " 8 ",
+                font: {
+                    fontSize: "14dp"
+                },
+                top: "3dp",
+                zIndex: 3,
+                border: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+                borderRadius: "16"
+            });
+            view.add(notice);
+        }
         var button = Ti.UI.createImageView({
             image: menu[i].img,
             height: "30dp",

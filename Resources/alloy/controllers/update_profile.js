@@ -37,19 +37,19 @@ function Controller() {
         return row;
     }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
-    this.__controllerPath = "profile";
+    this.__controllerPath = "update_profile";
     arguments[0] ? arguments[0]["__parentSymbol"] : null;
     arguments[0] ? arguments[0]["$model"] : null;
     arguments[0] ? arguments[0]["__itemTemplate"] : null;
     var $ = this;
     var exports = {};
-    $.__views.profile = Ti.UI.createWindow({
+    $.__views.update_profile = Ti.UI.createWindow({
         backgroundColor: "#fff",
         height: Ti.UI.FILL,
         width: Ti.UI.FILL,
-        id: "profile"
+        id: "update_profile"
     });
-    $.__views.profile && $.addTopLevelView($.__views.profile);
+    $.__views.update_profile && $.addTopLevelView($.__views.update_profile);
     $.__views.app = Ti.UI.createView({
         layout: "vertical",
         width: Ti.UI.FILL,
@@ -57,7 +57,7 @@ function Controller() {
         bottom: "50dp",
         id: "app"
     });
-    $.__views.profile.add($.__views.app);
+    $.__views.update_profile.add($.__views.app);
     $.__views.avarta = Ti.UI.createView({
         width: Ti.UI.FILL,
         height: "230dp",
@@ -67,25 +67,25 @@ function Controller() {
         backgroundImage: "/midu.jpg"
     });
     $.__views.app.add($.__views.avarta);
-    $.__views.__alloyId96 = Ti.UI.createImageView({
+    $.__views.__alloyId160 = Ti.UI.createImageView({
         width: "40dp",
         height: "40dp",
         top: "20dp",
         left: "20dp",
         zIndex: "2",
         image: "/icon/upload.png",
-        id: "__alloyId96"
+        id: "__alloyId160"
     });
-    $.__views.avarta.add($.__views.__alloyId96);
-    $.__views.__alloyId97 = Ti.UI.createView({
+    $.__views.avarta.add($.__views.__alloyId160);
+    $.__views.__alloyId161 = Ti.UI.createView({
         width: Ti.UI.FILL,
         height: Ti.UI.SIZE,
         backgroundImage: "/icon/transparent.png",
         bottom: 0,
-        id: "__alloyId97"
+        id: "__alloyId161"
     });
-    $.__views.avarta.add($.__views.__alloyId97);
-    $.__views.__alloyId98 = Ti.UI.createLabel({
+    $.__views.avarta.add($.__views.__alloyId161);
+    $.__views.__alloyId162 = Ti.UI.createLabel({
         font: {
             fontSize: "18dp"
         },
@@ -94,10 +94,10 @@ function Controller() {
         color: "#fff",
         top: "10dp",
         text: "MỸ DUNG",
-        id: "__alloyId98"
+        id: "__alloyId162"
     });
-    $.__views.__alloyId97.add($.__views.__alloyId98);
-    $.__views.__alloyId99 = Ti.UI.createLabel({
+    $.__views.__alloyId161.add($.__views.__alloyId162);
+    $.__views.__alloyId163 = Ti.UI.createLabel({
         font: {
             fontSize: "14dp"
         },
@@ -105,20 +105,20 @@ function Controller() {
         left: "20dp",
         color: "#fff",
         text: "2 Hải Triều Quận 1, TP. HCM",
-        id: "__alloyId99"
+        id: "__alloyId163"
     });
-    $.__views.__alloyId97.add($.__views.__alloyId99);
-    $.__views.__alloyId100 = Ti.UI.createImageView({
+    $.__views.__alloyId161.add($.__views.__alloyId163);
+    $.__views.__alloyId164 = Ti.UI.createImageView({
         width: "30dp",
         height: "26dp",
         right: "55dp",
         bottom: "20dp",
         zIndex: "2",
         image: "/icon/profile/favourite.png",
-        id: "__alloyId100"
+        id: "__alloyId164"
     });
-    $.__views.__alloyId97.add($.__views.__alloyId100);
-    $.__views.__alloyId101 = Ti.UI.createLabel({
+    $.__views.__alloyId161.add($.__views.__alloyId164);
+    $.__views.__alloyId165 = Ti.UI.createLabel({
         font: {
             fontSize: "22dp"
         },
@@ -126,10 +126,10 @@ function Controller() {
         bottom: "20dp",
         color: "#fff",
         text: "5",
-        id: "__alloyId101"
+        id: "__alloyId165"
     });
-    $.__views.__alloyId97.add($.__views.__alloyId101);
-    $.__views.__alloyId102 = Ti.UI.createLabel({
+    $.__views.__alloyId161.add($.__views.__alloyId165);
+    $.__views.__alloyId166 = Ti.UI.createLabel({
         font: {
             fontSize: "15dp"
         },
@@ -138,19 +138,19 @@ function Controller() {
         backgroundColor: "#dfdfdf",
         top: "0",
         bottom: "2dp",
-        id: "__alloyId102"
+        id: "__alloyId166"
     });
-    $.__views.app.add($.__views.__alloyId102);
+    $.__views.app.add($.__views.__alloyId166);
     $.__views.list_profile = Ti.UI.createTableView({
         separatorColor: "#eaeaea",
         id: "list_profile"
     });
     $.__views.app.add($.__views.list_profile);
-    $.__views.__alloyId103 = Alloy.createController("bar_menu", {
-        id: "__alloyId103",
-        __parentSymbol: $.__views.profile
+    $.__views.__alloyId167 = Alloy.createController("bar_menu", {
+        id: "__alloyId167",
+        __parentSymbol: $.__views.update_profile
     });
-    $.__views.__alloyId103.setParent($.__views.profile);
+    $.__views.__alloyId167.setParent($.__views.update_profile);
     exports.destroy = function() {};
     _.extend($, $.__views);
     var list = [];

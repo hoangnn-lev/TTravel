@@ -9,25 +9,29 @@
 			</View>
 			<View id="detail">
 				<View id="tourDescription">
+
 					<View id="description">
 						<ImageView image="/icon/rating.png" top="0" left="0" width="109dp" height="21dp"></ImageView>
 						<ImageView image="/icon/booking.png" onClick="booking" top="0" right="0" width="132dp" height="30dp"></ImageView>
-						<View top="23dp" class="itemDescription">
-							<Label left="0" top="0" text="1.500.00 VNĐ" class="price"/>
-						</View>
-						<View top="50dp" class="itemDescription">
-							<ImageView image="/icon/flag.png" left="0" height="15dp" width="15dp"/>
-							<Label left="25dp"  text="Điểm xuất phát: TP. Hồ Chí Minh" class="infoTitle"/>
-						</View>
-						<View top="73dp" class="itemDescription">
-							<ImageView image="/icon/clock.png" left="0" height="15dp" width="15dp"/>
-							<Label left="25dp" text="Thời gian: 3 ngày 2 đêm" class="infoTitle"/>
-						</View>
-						<View top="96dp" class="itemDescription">
-							<ImageView image="/icon/bus.png" left="0" height="15dp" width="15dp"/>
-							<Label left="25dp" text="Ngày khởi hành: Theo yêu cầu" class="infoTitle"/>
+						<View height="Ti.UI.SIZE" layout="vertical" top="15dp">
+							<View class="itemDescription">
+								<Label left="0" top="0" text="2.500.00 VNĐ" class="price"/>
+							</View>
+							<View class="itemDescription">
+								<ImageView image="/icon/flag.png" left="0" height="15dp" width="15dp"/>
+								<Label left="25dp"  text="Điểm xuất phát: TP. Hồ Chí Minh" class="infoTitle"/>
+							</View>
+							<View  class="itemDescription">
+								<ImageView image="/icon/clock.png" left="0" height="15dp" width="15dp"/>
+								<Label left="25dp" text="Thời gian: 3 ngày 2 đêm" class="infoTitle"/>
+							</View>
+							<View  class="itemDescription">
+								<ImageView image="/icon/bus.png" left="0" height="15dp" width="15dp"/>
+								<Label left="25dp" text="Ngày khởi hành: Theo yêu cầu" class="infoTitle"/>
+							</View>
 						</View>
 					</View>
+					<ImageView image="/icon/sale-detail.png" right="0" bottom="0" width="66dp" height="85dp"/>
 				</View>
 				<View layout="vertical" id="tabLink">
 

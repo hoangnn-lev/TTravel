@@ -1,6 +1,6 @@
 <Alloy>
 	<Window>
-		<Require type="view" src="left_menu"/>
+		
 		<View id="app">
 			<View id="topBar">
 				<ImageView height="30dp" width="12dp" onClick="back"  image="/icon/Previous@2x.png" left="10dp"/>

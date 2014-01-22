@@ -102,34 +102,34 @@ function Controller() {
         id: "topBar"
     });
     $.__views.app.add($.__views.topBar);
-    $.__views.__alloyId86 = Ti.UI.createImageView({
+    $.__views.__alloyId89 = Ti.UI.createImageView({
         height: "30dp",
         width: "12dp",
         image: "/icon/Previous@2x.png",
         left: "10dp",
-        id: "__alloyId86"
+        id: "__alloyId89"
     });
-    $.__views.topBar.add($.__views.__alloyId86);
-    back ? $.__views.__alloyId86.addEventListener("click", back) : __defers["$.__views.__alloyId86!click!back"] = true;
-    $.__views.__alloyId87 = Ti.UI.createImageView({
+    $.__views.topBar.add($.__views.__alloyId89);
+    back ? $.__views.__alloyId89.addEventListener("click", back) : __defers["$.__views.__alloyId89!click!back"] = true;
+    $.__views.__alloyId90 = Ti.UI.createImageView({
         height: "30dp",
         width: "30dp",
         image: "/icon/list.png",
         right: "15dp",
-        id: "__alloyId87"
+        id: "__alloyId90"
     });
-    $.__views.topBar.add($.__views.__alloyId87);
-    filter ? $.__views.__alloyId87.addEventListener("click", filter) : __defers["$.__views.__alloyId87!click!filter"] = true;
-    $.__views.__alloyId88 = Ti.UI.createLabel({
+    $.__views.topBar.add($.__views.__alloyId90);
+    filter ? $.__views.__alloyId90.addEventListener("click", filter) : __defers["$.__views.__alloyId90!click!filter"] = true;
+    $.__views.__alloyId91 = Ti.UI.createLabel({
         font: {
             fontSize: "15dp"
         },
         text: "TIN TỨC",
         height: Ti.UI.SIZE,
         color: "#fff",
-        id: "__alloyId88"
+        id: "__alloyId91"
     });
-    $.__views.topBar.add($.__views.__alloyId88);
+    $.__views.topBar.add($.__views.__alloyId91);
     $.__views.searchBar = Ti.UI.createView({
         backgroundColor: "#eeeeee",
         width: Ti.UI.FILL,
@@ -147,17 +147,17 @@ function Controller() {
         id: "searchIcon"
     });
     $.__views.searchBar.add($.__views.searchIcon);
-    $.__views.__alloyId89 = Ti.UI.createImageView({
+    $.__views.__alloyId92 = Ti.UI.createImageView({
         left: "8dp",
         zIndex: "1",
         image: "/icon/search-icon.png",
         height: "25dp",
         width: "25dp",
         top: "7dp",
-        id: "__alloyId89"
+        id: "__alloyId92"
     });
-    $.__views.searchIcon.add($.__views.__alloyId89);
-    $.__views.__alloyId90 = Ti.UI.createTextField({
+    $.__views.searchIcon.add($.__views.__alloyId92);
+    $.__views.__alloyId93 = Ti.UI.createTextField({
         backgroundColor: "#fff",
         backgroundFocusedColor: "#fff",
         border: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
@@ -172,10 +172,10 @@ function Controller() {
         },
         color: "#d3d3d3",
         hintText: "Tìm tin tức",
-        id: "__alloyId90"
+        id: "__alloyId93"
     });
-    $.__views.searchBar.add($.__views.__alloyId90);
-    $.__views.__alloyId91 = Ti.UI.createLabel({
+    $.__views.searchBar.add($.__views.__alloyId93);
+    $.__views.__alloyId94 = Ti.UI.createLabel({
         font: {
             fontSize: "15dp"
         },
@@ -184,19 +184,19 @@ function Controller() {
         backgroundColor: "#dfdfdf",
         top: "0",
         bottom: "2dp",
-        id: "__alloyId91"
+        id: "__alloyId94"
     });
-    $.__views.app.add($.__views.__alloyId91);
+    $.__views.app.add($.__views.__alloyId94);
     $.__views.list_news = Ti.UI.createTableView({
         separatorColor: "#eaeaea",
         id: "list_news"
     });
     $.__views.app.add($.__views.list_news);
-    $.__views.__alloyId92 = Alloy.createController("bar_menu", {
-        id: "__alloyId92",
+    $.__views.__alloyId95 = Alloy.createController("bar_menu", {
+        id: "__alloyId95",
         __parentSymbol: $.__views.news
     });
-    $.__views.__alloyId92.setParent($.__views.news);
+    $.__views.__alloyId95.setParent($.__views.news);
     exports.destroy = function() {};
     _.extend($, $.__views);
     var list = [];
@@ -212,10 +212,10 @@ function Controller() {
     list.push(create_list("promotion", "/news/hoa-hau.jpg", "20 Hoa hậu đẹp nhất 2013", "Trang Global Beauties vừa công bố Top 20 Miss Grand Slam 2013."));
     $.list_news.setData(list);
     $.list_news.addEventListener("click", function() {
-        Alloy.createController("detail_news").getView().open();
+        openView("detail_news");
     });
-    __defers["$.__views.__alloyId86!click!back"] && $.__views.__alloyId86.addEventListener("click", back);
-    __defers["$.__views.__alloyId87!click!filter"] && $.__views.__alloyId87.addEventListener("click", filter);
+    __defers["$.__views.__alloyId89!click!back"] && $.__views.__alloyId89.addEventListener("click", back);
+    __defers["$.__views.__alloyId90!click!filter"] && $.__views.__alloyId90.addEventListener("click", filter);
     _.extend($, exports);
 }
 

@@ -93,15 +93,15 @@ function Controller() {
         id: "topBar"
     });
     $.__views.app.add($.__views.topBar);
-    $.__views.__alloyId150 = Ti.UI.createImageView({
+    $.__views.__alloyId153 = Ti.UI.createImageView({
         height: "30dp",
         width: "12dp",
         image: "/icon/Previous@2x.png",
         left: "10dp",
-        id: "__alloyId150"
+        id: "__alloyId153"
     });
-    $.__views.topBar.add($.__views.__alloyId150);
-    back ? $.__views.__alloyId150.addEventListener("click", back) : __defers["$.__views.__alloyId150!click!back"] = true;
+    $.__views.topBar.add($.__views.__alloyId153);
+    back ? $.__views.__alloyId153.addEventListener("click", back) : __defers["$.__views.__alloyId153!click!back"] = true;
     $.__views.topBarText = Ti.UI.createLabel({
         font: {
             fontSize: "20dp"
@@ -113,31 +113,31 @@ function Controller() {
         id: "topBarText"
     });
     $.__views.topBar.add($.__views.topBarText);
-    $.__views.__alloyId151 = Ti.UI.createView({
+    $.__views.__alloyId154 = Ti.UI.createView({
         height: "45dp",
         backgroundColor: "#f6f6f6",
-        id: "__alloyId151"
+        id: "__alloyId154"
     });
-    $.__views.app.add($.__views.__alloyId151);
-    $.__views.__alloyId152 = Ti.UI.createImageView({
+    $.__views.app.add($.__views.__alloyId154);
+    $.__views.__alloyId155 = Ti.UI.createImageView({
         image: "/icon/search-icon.png",
         left: "10dp",
         width: "25dp",
         height: "25dp",
-        id: "__alloyId152"
+        id: "__alloyId155"
     });
-    $.__views.__alloyId151.add($.__views.__alloyId152);
-    $.__views.__alloyId153 = Ti.UI.createLabel({
+    $.__views.__alloyId154.add($.__views.__alloyId155);
+    $.__views.__alloyId156 = Ti.UI.createLabel({
         font: {
             fontSize: "16dp"
         },
         left: "40dp",
         color: "#737373",
         text: "Du lịch Nha Trang, ngày 16/02/13",
-        id: "__alloyId153"
+        id: "__alloyId156"
     });
-    $.__views.__alloyId151.add($.__views.__alloyId153);
-    $.__views.__alloyId154 = Ti.UI.createLabel({
+    $.__views.__alloyId154.add($.__views.__alloyId156);
+    $.__views.__alloyId157 = Ti.UI.createLabel({
         font: {
             fontSize: "15dp"
         },
@@ -146,23 +146,23 @@ function Controller() {
         backgroundColor: "#dfdfdf",
         top: "2dp",
         bottom: "2dp",
-        id: "__alloyId154"
+        id: "__alloyId157"
     });
-    $.__views.app.add($.__views.__alloyId154);
-    $.__views.__alloyId155 = Ti.UI.createView({
-        id: "__alloyId155"
+    $.__views.app.add($.__views.__alloyId157);
+    $.__views.__alloyId158 = Ti.UI.createView({
+        id: "__alloyId158"
     });
-    $.__views.app.add($.__views.__alloyId155);
+    $.__views.app.add($.__views.__alloyId158);
     $.__views.list_tours = Ti.UI.createTableView({
         separatorColor: "#eaeaea",
         id: "list_tours"
     });
-    $.__views.__alloyId155.add($.__views.list_tours);
-    $.__views.__alloyId156 = Alloy.createController("bar_menu", {
-        id: "__alloyId156",
+    $.__views.__alloyId158.add($.__views.list_tours);
+    $.__views.__alloyId159 = Alloy.createController("bar_menu", {
+        id: "__alloyId159",
         __parentSymbol: $.__views.search_list
     });
-    $.__views.__alloyId156.setParent($.__views.search_list);
+    $.__views.__alloyId159.setParent($.__views.search_list);
     exports.destroy = function() {};
     _.extend($, $.__views);
     var list = [];
@@ -178,9 +178,9 @@ function Controller() {
     list.push(create_list("/city/ha-noi.jpg", "Du lịch nha trang", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
     $.list_tours.setData(list);
     $.list_tours.addEventListener("click", function() {
-        Alloy.createController("detail_tour").getView().open();
+        openView("detail_tour");
     });
-    __defers["$.__views.__alloyId150!click!back"] && $.__views.__alloyId150.addEventListener("click", back);
+    __defers["$.__views.__alloyId153!click!back"] && $.__views.__alloyId153.addEventListener("click", back);
     _.extend($, exports);
 }
 

@@ -77,11 +77,6 @@ function Controller() {
         id: "favourite"
     });
     $.__views.favourite && $.addTopLevelView($.__views.favourite);
-    $.__views.__alloyId34 = Alloy.createController("left_menu", {
-        id: "__alloyId34",
-        __parentSymbol: $.__views.favourite
-    });
-    $.__views.__alloyId34.setParent($.__views.favourite);
     $.__views.app = Ti.UI.createView({
         layout: "vertical",
         width: Ti.UI.FILL,
@@ -98,15 +93,15 @@ function Controller() {
         id: "topBar"
     });
     $.__views.app.add($.__views.topBar);
-    $.__views.__alloyId35 = Ti.UI.createImageView({
+    $.__views.__alloyId38 = Ti.UI.createImageView({
         height: "30dp",
         width: "12dp",
         image: "/icon/Previous@2x.png",
         left: "10dp",
-        id: "__alloyId35"
+        id: "__alloyId38"
     });
-    $.__views.topBar.add($.__views.__alloyId35);
-    back ? $.__views.__alloyId35.addEventListener("click", back) : __defers["$.__views.__alloyId35!click!back"] = true;
+    $.__views.topBar.add($.__views.__alloyId38);
+    back ? $.__views.__alloyId38.addEventListener("click", back) : __defers["$.__views.__alloyId38!click!back"] = true;
     $.__views.topBarText = Ti.UI.createLabel({
         font: {
             fontSize: "20dp"
@@ -118,38 +113,31 @@ function Controller() {
         id: "topBarText"
     });
     $.__views.topBar.add($.__views.topBarText);
-    $.__views.__alloyId36 = Ti.UI.createView({
-        id: "__alloyId36"
+    $.__views.__alloyId39 = Ti.UI.createView({
+        id: "__alloyId39"
     });
-    $.__views.app.add($.__views.__alloyId36);
+    $.__views.app.add($.__views.__alloyId39);
     $.__views.list_tours = Ti.UI.createTableView({
         separatorColor: "#eaeaea",
         id: "list_tours"
     });
-    $.__views.__alloyId36.add($.__views.list_tours);
-    $.__views.__alloyId37 = Alloy.createController("bar_menu", {
-        id: "__alloyId37",
+    $.__views.__alloyId39.add($.__views.list_tours);
+    $.__views.__alloyId40 = Alloy.createController("bar_menu", {
+        id: "__alloyId40",
         __parentSymbol: $.__views.favourite
     });
-    $.__views.__alloyId37.setParent($.__views.favourite);
+    $.__views.__alloyId40.setParent($.__views.favourite);
     exports.destroy = function() {};
     _.extend($, $.__views);
     var list = [];
-    list.push(create_list("/city/ha-noi.jpg", "Du lịch nha trang vinperland 3 ngày 2 đêm", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
-    list.push(create_list("/city/ha-noi.jpg", "Du lịch nha trang", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
-    list.push(create_list("/city/ha-noi.jpg", "Du lịch nha trang", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
-    list.push(create_list("/city/ha-noi.jpg", "Du lịch nha trang", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
-    list.push(create_list("/city/ha-noi.jpg", "Du lịch nha trang", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
-    list.push(create_list("/city/ha-noi.jpg", "Du lịch nha trang", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
-    list.push(create_list("/city/ha-noi.jpg", "Du lịch nha trang", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
-    list.push(create_list("/city/ha-noi.jpg", "Du lịch nha trang", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
-    list.push(create_list("/city/ha-noi.jpg", "Du lịch nha trang", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
-    list.push(create_list("/city/ha-noi.jpg", "Du lịch nha trang", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
+    list.push(create_list("/city/hue.jpg", "Huế mộng mơ", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
+    list.push(create_list("/city/nha-trang.jpg", "Du lịch nha trang vinperland 3 ngày 2 đêm", "3 ngày 2 đêm", "25/03/2014", "1.820.000 VNĐ"));
+    list.push(create_list("/city/mien-tay.jpg", "Miền tây chợ trên sông", "3 ngày 2 đêm", "Theo yêu cầu", "1.820.000 VNĐ"));
     $.list_tours.setData(list);
     $.list_tours.addEventListener("click", function() {
-        Alloy.createController("detail_tour").getView().open();
+        openView("detail_tour");
     });
-    __defers["$.__views.__alloyId35!click!back"] && $.__views.__alloyId35.addEventListener("click", back);
+    __defers["$.__views.__alloyId38!click!back"] && $.__views.__alloyId38.addEventListener("click", back);
     _.extend($, exports);
 }
 

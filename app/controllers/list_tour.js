@@ -1,29 +1,27 @@
 var list = [];
 
-list.push(create_list('/city/ha-noi.jpg', 'Du lịch nha trang vinperland 3 ngày 2 đêm', '3 ngày 2 đêm', 'Theo yêu cầu', '1.820.000 VNĐ'));
-list.push(create_list('/city/ha-noi.jpg', 'Du lịch nha trang', '3 ngày 2 đêm', 'Theo yêu cầu', '1.820.000 VNĐ'));
-list.push(create_list('/city/ha-noi.jpg', 'Du lịch nha trang', '3 ngày 2 đêm', 'Theo yêu cầu', '1.820.000 VNĐ'));
-list.push(create_list('/city/ha-noi.jpg', 'Du lịch nha trang', '3 ngày 2 đêm', 'Theo yêu cầu', '1.820.000 VNĐ'));
-list.push(create_list('/city/ha-noi.jpg', 'Du lịch nha trang', '3 ngày 2 đêm', 'Theo yêu cầu', '1.820.000 VNĐ'));
-list.push(create_list('/city/ha-noi.jpg', 'Du lịch nha trang', '3 ngày 2 đêm', 'Theo yêu cầu', '1.820.000 VNĐ'));
-list.push(create_list('/city/ha-noi.jpg', 'Du lịch nha trang', '3 ngày 2 đêm', 'Theo yêu cầu', '1.820.000 VNĐ'));
-list.push(create_list('/city/ha-noi.jpg', 'Du lịch nha trang', '3 ngày 2 đêm', 'Theo yêu cầu', '1.820.000 VNĐ'));
-list.push(create_list('/city/ha-noi.jpg', 'Du lịch nha trang', '3 ngày 2 đêm', 'Theo yêu cầu', '1.820.000 VNĐ'));
-list.push(create_list('/city/ha-noi.jpg', 'Du lịch nha trang', '3 ngày 2 đêm', 'Theo yêu cầu', '1.820.000 VNĐ'));
+list.push(create_list('/city/nha-trang.jpg', 'Du lịch nha trang vinperland 3 ngày 2 đêm', '3 ngày 2 đêm', '25/03/2014', '1.820.000 VNĐ'));
+list.push(create_list('/city/mien-tay.jpg', 'Miền tây chợ trên sông', '3 ngày 2 đêm', 'Theo yêu cầu', '1.820.000 VNĐ'));
+list.push(create_list('/city/hue.jpg', 'Huế mộng mơ', '3 ngày 2 đêm', 'Theo yêu cầu', '1.820.000 VNĐ', 1));
+list.push(create_list('/city/hcm.jpg', 'Đầm sen TP Hồ Chí minh', '3 ngày 2 đêm', 'Theo yêu cầu', '1.820.000 VNĐ'));
+list.push(create_list('/city/ha-noi.jpg', 'Thăm lăng bác Hà Nội', '3 ngày 2 đêm', '17/05/2014', '1.820.000 VNĐ', 1));
+list.push(create_list('/city/nha-trang.jpg', 'Du lịch nha trang vinperland 3 ngày 2 đêm', '3 ngày 2 đêm', 'Theo yêu cầu', '1.820.000 VNĐ'));
+list.push(create_list('/city/mien-tay.jpg', 'Miền tây chợ trên sông', '3 ngày 2 đêm', 'Theo yêu cầu', '1.820.000 VNĐ',1));
+list.push(create_list('/city/hue.jpg', 'Huế mộng mơ', '3 ngày 2 đêm', 'Theo yêu cầu', '1.820.000 VNĐ'));
+list.push(create_list('/city/hcm.jpg', 'Đầm sen TP Hồ Chí minh', '3 ngày 2 đêm', '11/05/2014', '1.820.000 VNĐ', 1));
+list.push(create_list('/city/ha-noi.jpg', 'Thăm lăng bác Hà Nội', '3 ngày 2 đêm', 'Theo yêu cầu', '1.820.000 VNĐ'));
 
 $.list_tours.setData(list);
 
 $.list_tours.addEventListener('click', function(e) {
-
- 	Alloy.createController('detail_tour').getView().open(); 
-
+	openView('detail_tour');
 });
 
 /*
  * function create_list
  * custom table view row for list tour
  * */
-function create_list(img, title, day, departure, price) {
+function create_list(img, title, day, departure, price, promotion) {
 	var row = Ti.UI.createTableViewRow({
 		font : {
 			fontSize : '15dp'
@@ -47,6 +45,18 @@ function create_list(img, title, day, departure, price) {
 		borderRadius : '60'
 	}));
 
+	//Khuyến mãi
+	if (promotion) {
+		row.add(Ti.UI.createImageView({
+			image : '/icon/sale.png',
+			width : '60dp',
+			height : '60dp',
+			left : '7dp',
+			top : '0',
+			left : '0'
+		}));
+	}
+
 	//title tour
 	row.add(Ti.UI.createLabel({
 		text : title,
@@ -56,7 +66,7 @@ function create_list(img, title, day, departure, price) {
 		color : '#575757',
 		left : '73dp',
 		top : '7dp',
-		height:'25dp'
+		height : '25dp'
 	}));
 
 	row.add(Ti.UI.createLabel({
@@ -92,6 +102,6 @@ function create_list(img, title, day, departure, price) {
 	return row;
 }
 
-function back(e){
+function back(e) {
 	openView('home');
 }
