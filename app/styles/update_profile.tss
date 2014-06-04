@@ -4,11 +4,7 @@
 	top:0,
 	backgroundColor:'#dfdfdf'
 },
-"#content":{
-	layout:'vertical',
-	width:Ti.UI.FILL,
-	height:Ti.UI.FILL,
-},
+
 ".uploadCircle":{
 	width:'40dp',
 	height:'40dp',
@@ -31,30 +27,6 @@
 	bottom:'20dp',
 	left:'20dp',
 	color:'#fff'
-},
-".updateProfile":{
-	
-	height:Ti.UI.SIZE,
-	width:Ti.UI.FILL,
-	font:{
-		fontSize:'14dp'
-	},
-	top:0
-},
-".aboutView":{
-	width:Ti.UI.FILL,
-	height:Ti.UI.SIZE,
-},
-".about":{
-	top:'10dp',
-	bottom:'10dp',
-	left:'20dp',
-	font:{
-		fontSize:'14dp'
-	},
-	color:'#737373',
-	width:Ti.UI.FILL,
-	height:Ti.UI.SIZE
 },
 ".favourite":{
 	width:'30dp',
